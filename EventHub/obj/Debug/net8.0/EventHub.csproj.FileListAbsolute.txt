@@ -1,0 +1,60 @@
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\appsettings.Development.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\appsettings.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\EventHub.staticwebassets.runtime.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\EventHub.exe
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\EventHub.deps.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\EventHub.runtimeconfig.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\bin\Debug\net8.0\EventHub.pdb
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.GeneratedMSBuildEditorConfig.editorconfig
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.AssemblyInfoInputs.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.AssemblyInfo.cs
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.csproj.CoreCompileInputs.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.MvcApplicationPartsAssemblyInfo.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.RazorAssemblyInfo.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.RazorAssemblyInfo.cs
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets.build.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets.development.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.EventHub.Microsoft.AspNetCore.StaticWebAssets.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.build.EventHub.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EventHub.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EventHub.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\staticwebassets.pack.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\scopedcss\bundle\EventHub.styles.css
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\scopedcss\projectbundle\EventHub.bundle.scp.css
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\refint\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.pdb
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\EventHub.genruntimeconfig.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\sdf\EventHub\EventHub\obj\Debug\net8.0\ref\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\appsettings.Development.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\appsettings.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\EventHub.staticwebassets.runtime.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\EventHub.exe
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\EventHub.deps.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\EventHub.runtimeconfig.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\bin\Debug\net8.0\EventHub.pdb
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.GeneratedMSBuildEditorConfig.editorconfig
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.AssemblyInfoInputs.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.AssemblyInfo.cs
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.csproj.CoreCompileInputs.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.MvcApplicationPartsAssemblyInfo.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.RazorAssemblyInfo.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.RazorAssemblyInfo.cs
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets.build.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets.development.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.EventHub.Microsoft.AspNetCore.StaticWebAssets.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.build.EventHub.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EventHub.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EventHub.props
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\staticwebassets.pack.json
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\scopedcss\bundle\EventHub.styles.css
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\scopedcss\projectbundle\EventHub.bundle.scp.css
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\refint\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.pdb
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.genruntimeconfig.cache
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\ref\EventHub.dll

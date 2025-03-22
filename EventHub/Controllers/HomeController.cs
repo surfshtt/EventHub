@@ -1,5 +1,6 @@
 using EventHub.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
 
 namespace EventHub.Controllers
@@ -7,15 +8,18 @@ namespace EventHub.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IConfiguration _configuration;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var adminName = _configuration.GetValue<string>("Admin:Name");
+            return View((object)adminName);
         }
 
         public IActionResult Privacy()

@@ -58,3 +58,4 @@
 \\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.pdb
 \\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.genruntimeconfig.cache
 \\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\ref\EventHub.dll
+\\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub\obj\Debug\net8.0\EventHub.sourcelink.json

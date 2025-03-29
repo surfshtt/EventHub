@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = \\mcb.local\RoamingProfiles$\StudentsData\1227154\Desktop\EventHub repo\EventHub\EventHub
 build_property._RazorSourceGeneratorDebug = 
 
+[//mcb.local/RoamingProfiles$/StudentsData/1227154/Desktop/EventHub repo/EventHub/EventHub/Views/Home/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [//mcb.local/RoamingProfiles$/StudentsData/1227154/Desktop/EventHub repo/EventHub/EventHub/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

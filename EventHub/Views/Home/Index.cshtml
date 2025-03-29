@@ -3,7 +3,93 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+<body>
     <p>@Model</p>
-</div>
+    <h2 class="w3-center"></h2>
+
+    <div class="w3-content w3-display-container" style="position:relative;">
+        <img class="mySlides" src="~/images/preview/1.png" style="width:100%">
+        <img class="mySlides" src="~/images/preview/2.png" style="width:100%">
+        <img class="mySlides" src="~/images/preview/3.png" style="width:100%">
+
+        <button class="slider-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="slider-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <style>
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .slider-button:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        .w3-display-left {
+            left: 15px;
+        }
+
+        .w3-display-right {
+            right: 15px;
+        }
+    </style>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        // Автоматическое перелистывание (опционально)
+        var autoSlide = setInterval(function () {
+            plusDivs(1);
+        }, 4000); // Меняем каждые 5 секунд
+
+        // Остановить автоматическое перелистывание при наведении
+        document.querySelector('.w3-content').addEventListener('mouseenter', function () {
+            clearInterval(autoSlide);
+        });
+
+        // Возобновить автоматическое перелистывание при уходе мыши
+        document.querySelector('.w3-content').addEventListener('mouseleave', function () {
+            autoSlide = setInterval(function () {
+                plusDivs(1);
+            },
+                4000);
+        });
+    </script>
+
+</body>
+</html>

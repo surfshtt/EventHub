@@ -19,7 +19,12 @@ namespace EventHub.Controllers
         public IActionResult Index()
         {
             var adminName = _configuration.GetValue<string>("Admin:Name");
-            return View((object)adminName);
+
+            Event ev = new Event(_configuration.GetValue<string>("Event:Name"), _configuration.GetValue<string>("Event:Description"));
+            
+           // var  = _configuration.GetValue<string>("Admin:Name");
+
+            return View(ev);
         }
 
         public IActionResult Privacy()

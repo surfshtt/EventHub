@@ -9,79 +9,110 @@
     }
 </style>
 <body>
-    <h2 class="w3-center" style="text-align: center;">Рекомендации</h2>
 
-    <div class="w3-content w3-display-container" style="position:relative; margin-top:20px; border-radius:8px;">
-        <img class="mySlides" src="~/images/preview/1.png" style="width:100%">
-        <img class="mySlides" src="~/images/preview/2.png" style="width:100%">
-        <img class="mySlides" src="~/images/preview/3.png" style="width:100%">
+    <div class="w3-content w3-display-container" style="min-width:100%; position:relative; margin-top:30px; margin-bottom:30px;">
+        <img class="mySlides" src="~/images/preview/1.png" style="width:100%; border-radius:var(--radius);">
+        <img class="mySlides" src="~/images/preview/2.png" style="width:100%; border-radius:var(--radius);">
+        <img class="mySlides" src="~/images/preview/3.png" style="width:100%; border-radius:var(--radius);">
 
         <button class="slider-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="slider-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
-    <div class="events-container">
 
-        <div class="event-card">
-            <img src="~/images/events/1.png" alt="Не удалось загрузить картинку" class="event-image">
-            <div class="event-content">
-                <h3 class="event-title">@Model.Name</h3>
-                <p class="event-description">
-                    @Model.Description
-                </p>
-                <a href="#" class="event-button">Подробнее</a>
+    <div class="container">
+        <h2 class="section-title">Рекомендации</h2>
+        <div class="event-grid">
+            <div class="event-card">
+                <img src="~/images/events/2.png" alt="Не удалось загрузить картинку" class="event-image">
+                <div class="event-details">
+                    <h3>Summer Music Festival</h3>
+                    <div class="event-meta">
+                        <span class="event-date">June 15-17, 2024</span>
+                        <span class="event-location">Central Park, NY</span>
+                    </div>
+                    <p>Three days of amazing music performances from top artists around the world.</p>
+                    <div class="event-footer">
+                        <span class="event-price">From $89</span>
+                        <a href="event-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/random/300x200/?conference');">
+                    <span class="event-badge">Limited</span>
+                </div>
+                <div class="event-details">
+                    <h3>Tech Conference 2024</h3>
+                    <div class="event-meta">
+                        <span class="event-date">July 10-12, 2024</span>
+                        <span class="event-location">Convention Center, SF</span>
+                    </div>
+                    <p>Join industry leaders for three days of innovation and networking.</p>
+                    <div class="event-footer">
+                        <span class="event-price">From $199</span>
+                        <a href="event-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/random/300x200/?comedy');">
+                    <span class="event-badge">Hot</span>
+                </div>
+                <div class="event-details">
+                    <h3>Comedy Night Special</h3>
+                    <div class="event-meta">
+                        <span class="event-date">May 25, 2024</span>
+                        <span class="event-location">Laugh Factory, LA</span>
+                    </div>
+                    <p>An unforgettable night of laughter with the funniest comedians.</p>
+                    <div class="event-footer">
+                        <span class="event-price">From $49</span>
+                        <a href="event-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/random/300x200/?concert');">
+                    <span class="event-badge">Featured</span>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Music Festival</h3>
+                    <div class="event-meta">
+                        <span class="event-date">June 15-17, 2024</span>
+                        <span class="event-location">Central Park, NY</span>
+                    </div>
+                    <p>Three days of amazing music performances from top artists around the world.</p>
+                    <div class="event-footer">
+                        <span class="event-price">From $89</span>
+                        <a href="event-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/random/300x200/?concert');">
+                    <span class="event-badge">Featured</span>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Music Festival</h3>
+                    <div class="event-meta">
+                        <span class="event-date">June 15-17, 2024</span>
+                        <span class="event-location">Central Park, NY</span>
+                    </div>
+                    <p>Three days of amazing music performances from top artists around the world.</p>
+                    <div class="event-footer">
+                        <span class="event-price">From $89</span>
+                        <a href="event-detail.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="event-card">
-            <img src="~/images/events/2.png" alt="Не удалось загрузить картинку" class="event-image">
-            <div class="event-content">
-                <h3 class="event-title">Название</h3>
-                <p class="event-description">
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание
-                </p>
-                <a href="#" class="event-button">Подробнее</a>
-            </div>
-        </div>
-        <div class="event-card">
-            <img src="~/images/events/2.png" alt="Не удалось загрузить картинку" class="event-image">
-            <div class="event-content">
-                <h3 class="event-title">Название</h3>
-                <p class="event-description">
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание<br>
-                    Описание Описание Описание
-                </p>
-                <a href="#" class="event-button">Подробнее</a>
-            </div>
-        </div>
-        <div class="event-card">
-            <img src="~/images/events/2.png" alt="Не удалось загрузить картинку" class="event-image">
-            <div class="event-content">
-                <h3 class="event-title">Название</h3>
-                <p class="event-description">
-                    Описание Описание Описание
-                    Описание Описание Описание
-                    Описание Описание Описание
-                    Описание Описание Описание
-                    Описание Описание Описание
-                    Описание Описание Описание
-                    Описание Описание Описание
-                    Описание Описание Описание
-                </p>
-                <a href="#" class="event-button">Подробнее</a>
-            </div>
+        <div class="view-all-link">
+            <a href="events.html">View All Events <span>→</span></a>
         </div>
     </div>
 
@@ -116,58 +147,151 @@
             right: 15px;
         }
 
-        /* Event card styles */
-        .events-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+
+        section {
+            padding: 4rem 0
         }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+            position: relative
+        }
+
+            .section-title:after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 4px;
+                background-color: var(--primary);
+                margin: 1rem auto 0;
+                border-radius: 2px
+            }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 2rem
+        }
+
+            .event-grid.three-columns {
+                grid-template-columns: repeat(3,1fr)
+            }
 
         .event-card {
-            width: 100%;
-            max-width: 400px;
-            
-            border-radius: 8px;
+
+            background-color: var(--background);
+            border-radius: var(--radius);
             overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background: white;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column
         }
+
+            .event-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-large)
+            }
 
         .event-image {
-            width: 100%;
+            
             height: 350px;
-            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            position: relative
         }
 
-        .event-content {
-            padding: 15px;
+        .event-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: var(--accent);
+            color: #fff;
+            padding: .25rem .75rem;
+            font-size: .75rem;
+            font-weight: 600;
+            border-radius: 50px
         }
 
-        .event-title {
-            margin-top: 0;
-            color: #333;
+        .event-details {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1
         }
 
-        .event-description {
-            color: #666;
-            margin-bottom: 15px;
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            font-size: .875rem;
+            color: var(--text-light)
         }
 
-        .event-button {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+        .event-date {
+            margin-right: 1rem;
+            position: relative;
+            padding-left: 20px
         }
 
-            .event-button:hover {
-                background-color: #45a049;
+            .event-date:before {
+                content: "ðŸ“…";
+                position: absolute;
+                left: 0
             }
+
+        .event-location {
+            position: relative;
+            padding-left: 20px
+        }
+
+            .event-location:before {
+                content: "ðŸ“";
+                position: absolute;
+                left: 0
+            }
+
+        .event-details p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem
+        }
+
+        .event-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto
+        }
+
+        .event-price {
+            font-weight: 700;
+            color: var(--primary)
+        }
+
+        :root {
+            --primary: #5D3FD3;
+            --primary-hover: #4F34B3;
+            --secondary: #20B2AA;
+            --accent: #FF7F50;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --text-lighter: #999999;
+            --background: #FFFFFF;
+            --background-alt: #F9F9F9;
+            --border: #E0E0E0;
+            --border-light: #F0F0F0;
+            --success: #4CAF50;
+            --warning: #FFC107;
+            --error: #F44336;
+            --radius: 8px;
+            --shadow: 0 2px 5px rgba(0, 0, 0, .1);
+            --shadow-large: 0 5px 15px rgba(0, 0, 0, .12);
+            --transition: all .3s ease
+        }
+
     </style>
 
     <script>

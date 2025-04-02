@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\images\\events\\Thumbs.db"
     },
     {
+      "Id": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\wwwroot\\images\\events\\asd.png",
+      "PackagePath": "staticwebassets\\images\\events\\asd.png"
+    },
+    {
+      "Id": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\wwwroot\\images\\events\\dsa.png",
+      "PackagePath": "staticwebassets\\images\\events\\dsa.png"
+    },
+    {
       "Id": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\wwwroot\\images\\logo.PNG",
       "PackagePath": "staticwebassets\\images\\logo.PNG"
     },

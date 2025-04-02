@@ -20,9 +20,17 @@ namespace EventHub.Controllers
         {
             var adminName = _configuration.GetValue<string>("Admin:Name");
 
-            Event ev = new Event(_configuration.GetValue<string>("Event:Name"), _configuration.GetValue<string>("Event:Description"));
-            
-           // var  = _configuration.GetValue<string>("Admin:Name");
+            Event ev = new Event(
+                _configuration.GetValue<string>("Event:Name"),
+                _configuration.GetValue<string>("Event:Description"),
+                _configuration.GetValue<string>("Event:Date"),
+                _configuration.GetValue<string>("Event:Country"),
+                _configuration.GetValue<string>("Event:Place"),
+                _configuration.GetValue<int>("Event:NeedableAge"),
+                _configuration.GetValue<float>("Event:MinPrice")
+            );
+
+            // var  = _configuration.GetValue<string>("Admin:Name");
 
             return View(ev);
         }

@@ -1,4 +1,5 @@
 using EventHub.Models;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
@@ -29,10 +30,11 @@ namespace EventHub.Controllers
                 _configuration.GetValue<int>("Event:NeedableAge"),
                 _configuration.GetValue<float>("Event:MinPrice")
             );
+            Event[] ar = new Event[] { ev, ev };
 
             // var  = _configuration.GetValue<string>("Admin:Name");
 
-            return View(ev);
+            return View(ar);
         }
 
         public IActionResult Privacy()
@@ -43,6 +45,24 @@ namespace EventHub.Controllers
         public IActionResult Contacts()
         {
             return View();
+        }
+
+        public IActionResult About(int eventId)
+        {
+            //Логика поиска в бд
+            Event ev = new Event(
+               _configuration.GetValue<string>("Event:Name"),
+               _configuration.GetValue<string>("Event:Description"),
+               _configuration.GetValue<string>("Event:Date"),
+               _configuration.GetValue<string>("Event:Country"),
+               _configuration.GetValue<string>("Event:Place"),
+               _configuration.GetValue<int>("Event:NeedableAge"),
+               _configuration.GetValue<float>("Event:MinPrice")
+            );
+
+            AboutEvent ab = new AboutEvent(ev, [ev,ev,ev]);
+
+            return View(ab);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

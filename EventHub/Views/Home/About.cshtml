@@ -1,0 +1,1192 @@
+﻿@model AboutEvent
+@{
+    ViewData["Title"] = "About Page";
+}
+
+
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+<body>
+
+    @if(Model.eventToShow == null)
+    {
+        <h2 class="section-title" style="padding:300px 0 0 0">Упс.. Событие не найдено</h2>
+    }
+    else
+    {
+        <section class="event-detail">
+            <div class="container">
+                <div class="event-header">
+                    <img class="mySlides" src="~/images/preview/1.png" style="width:100%; border-radius:var(--radius);">
+                    <div class="event-header-content">
+                        <div class="event-info">
+                            <h1 style="font-weight:700">@Model.eventToShow.Name</h1>
+                            <div class="event-meta-large">
+                                <div class="meta-item">
+                                    <span class="meta-label">Дата</span>
+                                    <span class="meta-value">@Model.eventToShow.Date</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Время</span>
+                                    <span class="meta-value">12:00 PM - 11:00 PM</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Локация</span>
+                                    <span class="meta-value">@Model.eventToShow.Place, @Model.eventToShow.Country</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Организатор</span>
+                                    <span class="meta-value">Влад Невский</span>
+                                </div>
+                            </div>
+                            <div class="event-badges">
+                                <span class="badge">Музыка</span>
+                                <span class="badge">С детьми</span>
+                            </div>
+                        </div>
+                        <div class="ticket-info">
+                            <div class="price-box">
+                                <span class="price-from">От</span>
+                                <span class="price">@Model.eventToShow.MinPrice р.</span>
+                            </div>
+                            <a href="#tickets" class="btn btn-primary btn-large" style="font-weight:500">Купить билеты</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-content">
+                    <div class="event-description">
+                        <h2>О этом событии</h2>
+                        <p>@Model.eventToShow.Description</p>
+                        @* <h3>Lineup</h3>
+                        <ul class="lineup-list">
+                            <li><strong>Friday Headliners:</strong> The Rhythm Collective, Electric Dreams, Sound Pioneers</li>
+                            <li><strong>Saturday Headliners:</strong> Melody Makers, Sonic Wave, Urban Beats</li>
+                            <li><strong>Sunday Headliners:</strong> The Harmonies, Bass Droppers, Acoustic Soul</li>
+                        </ul> *@
+
+                        <h3>Что взять с собой?</h3>
+                        <ul>
+                            <li>Если выбранное вами событие имеет возрастное ограничение, не забудьте о документе который подтвердит вашу личность и возраст</li>
+                            <li>Бутылка воды (обычная бутылка воды не запрещена)</li>
+                            <li>Наличные деньги. Не все организаторы могут позаботиться о кассовых аппаратах, узнавайте заранее</li>
+                        </ul>
+
+                        <h3>Запрещенные вещи:</h3>
+                        <ul>
+                            <li>Алкоголь</li>
+                            <li>Еда</li>
+                            <li>Оружие в любых его видах</li>
+                            <li>Наркотики</li>
+                        </ul>
+                    </div>
+                        
+                </div>
+
+                <div id="tickets" class="ticket-section">
+                    <h2>Билеты</h2>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <div class="ticket-details">
+                                <h3>General Admission</h3>
+                                <p>Access to all stages and general festival areas</p>
+                                <ul class="ticket-features">
+                                    <li>3-day access to all stages</li>
+                                    <li>Food and beverage vendors</li>
+                                    <li>Art installations</li>
+                                </ul>
+                            </div>
+                            <div class="ticket-actions">
+                                <span class="ticket-price">$89</span>
+                                <div class="ticket-quantity">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="10">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="ticket-option featured-ticket">
+                            <div class="ticket-badge">Best Value</div>
+                            <div class="ticket-details">
+                                <h3>VIP Package</h3>
+                                <p>Premium experience with exclusive perks</p>
+                                <ul class="ticket-features">
+                                    <li>All General Admission benefits</li>
+                                    <li>VIP lounge access</li>
+                                    <li>Premium viewing areas</li>
+                                    <li>Exclusive bars with shorter lines</li>
+                                    <li>VIP restroom facilities</li>
+                                    <li>Commemorative festival item</li>
+                                </ul>
+                            </div>
+                            <div class="ticket-actions">
+                                <span class="ticket-price">$249</span>
+                                <div class="ticket-quantity">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="10">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="ticket-option">
+                            <div class="ticket-details">
+                                <h3>Single Day Pass</h3>
+                                <p>Access for one day of the festival</p>
+                                <ul class="ticket-features">
+                                    <li>One day access to all stages</li>
+                                    <li>Food and beverage vendors</li>
+                                    <li>Art installations</li>
+                                </ul>
+                            </div>
+                            <div class="ticket-actions">
+                                <span class="ticket-price">$39</span>
+                                <div class="ticket-quantity">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="10">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seat-map-section">
+                        <h3>Choose Your Seats</h3>
+                        <div class="seat-map-container">
+                            <div class="seat-map">
+                                <div class="stage">STAGE</div>
+                                <div class="seat-grid">
+                                    <!-- Row A -->
+                                    <div class="seat-row">
+                                        <div class="row-label">A</div>
+                                        <div class="seat available" data-seat="A1">A1</div>
+                                        <div class="seat available" data-seat="A2">A2</div>
+                                        <div class="seat sold" data-seat="A3">A3</div>
+                                        <div class="seat available" data-seat="A4">A4</div>
+                                        <div class="seat available" data-seat="A5">A5</div>
+                                        <div class="seat sold" data-seat="A6">A6</div>
+                                        <div class="seat available" data-seat="A7">A7</div>
+                                        <div class="seat sold" data-seat="A8">A8</div>
+                                    </div>
+                                    <!-- Row B -->
+                                    <div class="seat-row">
+                                        <div class="row-label">B</div>
+                                        <div class="seat available" data-seat="B1">B1</div>
+                                        <div class="seat available" data-seat="B2">B2</div>
+                                        <div class="seat available" data-seat="B3">B3</div>
+                                        <div class="seat available" data-seat="B4">B4</div>
+                                        <div class="seat sold" data-seat="B5">B5</div>
+                                        <div class="seat sold" data-seat="B6">B6</div>
+                                        <div class="seat available" data-seat="B7">B7</div>
+                                        <div class="seat available" data-seat="B8">B8</div>
+                                    </div>
+                                    <!-- Row C -->
+                                    <div class="seat-row">
+                                        <div class="row-label">C</div>
+                                        <div class="seat available" data-seat="C1">C1</div>
+                                        <div class="seat available" data-seat="C2">C2</div>
+                                        <div class="seat sold" data-seat="C3">C3</div>
+                                        <div class="seat available" data-seat="C4">C4</div>
+                                        <div class="seat available" data-seat="C5">C5</div>
+                                        <div class="seat available" data-seat="C6">C6</div>
+                                        <div class="seat available" data-seat="C7">C7</div>
+                                        <div class="seat available" data-seat="C8">C8</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat-legend">
+                                <div class="legend-item">
+                                    <div class="seat-sample available"></div>
+                                    <span>Available</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="seat-sample selected"></div>
+                                    <span>Selected</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="seat-sample sold"></div>
+                                    <span>Sold</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-seats">
+                            <h4>Selected Seats</h4>
+                            <div class="selected-seats-list">No seats selected</div>
+                            <div class="total-price">
+                                <span>Total:</span>
+                                <span class="price">$0.00</span>
+                            </div>
+                            <button class="btn btn-primary" disabled>Continue to Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+
+
+        <div class="container">
+            <h2 class="section-title">Похожие события</h2>
+            <div class="event-grid">
+                @foreach (Event eve in Model.recEvents)
+                {
+                    <div class="event-card">
+                        <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
+                        <div class="event-details">
+                            <h3>@eve.Name</h3>
+                            <div class="event-meta">
+                                <span class="event-date">@eve.Date</span>
+                                <span class="event-location">@eve.Place, @eve.Country</span>
+                            </div>
+                            <p>@eve.Description</p>
+                            <div class="event-footer">
+                                <span class="event-price">от @eve.MinPrice</span>
+                                <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    }
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Seat selection functionality
+        document.querySelectorAll('.seat.available').forEach(seat => {
+            seat.addEventListener('click', function () {
+                this.classList.toggle('selected');
+                updateSelectedSeats();
+            });
+        });
+
+        function updateSelectedSeats() {
+            const selectedSeats = document.querySelectorAll('.seat.selected');
+            const selectedSeatsList = document.querySelector('.selected-seats-list');
+            const totalPriceElement = document.querySelector('.total-price .price');
+            const checkoutButton = document.querySelector('.selected-seats button');
+
+            if (selectedSeats.length > 0) {
+                let seatNames = Array.from(selectedSeats).map(seat => seat.getAttribute('data-seat')).join(', ');
+                selectedSeatsList.textContent = seatNames;
+                let totalPrice = selectedSeats.length * 50; // Assuming $50 per seat
+                totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
+                checkoutButton.disabled = false;
+            } else {
+                selectedSeatsList.textContent = 'No seats selected';
+                totalPriceElement.textContent = '$0.00';
+                checkoutButton.disabled = true;
+            }
+        }
+
+        // Ticket quantity buttons
+        document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const input = this.parentNode.querySelector('input');
+                const currentValue = parseInt(input.value);
+
+                if (this.classList.contains('minus') && currentValue > 1) {
+                    input.value = currentValue - 1;
+                } else if (this.classList.contains('plus') && currentValue < 10) {
+                    input.value = currentValue + 1;
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .w3-display-left {
+            left: 15px;
+        }
+
+        .w3-display-right {
+            right: 15px;
+        }
+
+
+        section {
+            padding: 4rem 0
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+            position: relative
+        }
+
+            .section-title:after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 4px;
+                background-color: var(--primary);
+                margin: 1rem auto 0;
+                border-radius: 2px
+            }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 2rem
+        }
+
+            .event-grid.three-columns {
+                grid-template-columns: repeat(3,1fr)
+            }
+
+        .event-card {
+
+            background-color: var(--background);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column
+        }
+
+            .event-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-large)
+            }
+
+        .event-image {
+            
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative
+        }
+
+        .event-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: var(--accent);
+            color: #fff;
+            padding: .25rem .75rem;
+            font-size: .75rem;
+            font-weight: 600;
+            border-radius: 50px
+        }
+
+        .event-details {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1
+        }
+
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            font-size: .875rem;
+            color: var(--text-light)
+        }
+
+        .event-date {
+            margin-right: 1rem;
+            position: relative;
+        }
+
+        .event-location {
+            position: relative;
+        }
+
+        .event-details p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem
+        }
+
+        .event-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto
+        }
+
+        .event-price {
+            font-weight: 700;
+            color: var(--primary)
+        }
+
+        :root {
+            --primary: #5D3FD3;
+            --primary-hover: #4F34B3;
+            --secondary: #20B2AA;
+            --accent: #FF7F50;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --text-lighter: #999999;
+            --background: #FFFFFF;
+            --background-alt: #F9F9F9;
+            --border: #E0E0E0;
+            --border-light: #F0F0F0;
+            --success: #4CAF50;
+            --warning: #FFC107;
+            --error: #F44336;
+            --radius: 8px;
+            --shadow: 0 2px 5px rgba(0, 0, 0, .1);
+            --shadow-large: 0 5px 15px rgba(0, 0, 0, .12);
+            --transition: all .3s ease
+        }
+
+
+        
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #5D3FD3;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4e35b1;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #5D3FD3;
+  color: #5D3FD3;
+}
+
+.btn-outline:hover {
+  background-color: #5D3FD3;
+  color: #fff;
+}
+
+.btn-large {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.logo span {
+  color: #5D3FD3;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: #5D3FD3;
+}
+
+.nav-links a:hover {
+  color: #5D3FD3;
+}
+
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+/* Event Detail Styles */
+.event-detail {
+  padding: 2rem 0 4rem;
+}
+
+.event-header {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.event-image-large {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.event-header-content {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.event-info {
+  flex: 1;
+  min-width: 320px;
+}
+
+.event-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.event-meta-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.meta-value {
+  font-weight: 500;
+}
+
+.event-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.ticket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.price-box {
+  text-align: right;
+}
+
+.price-from {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5D3FD3;
+}
+
+.event-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.event-description {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.event-description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.event-description h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 1rem;
+  color: #333;
+}
+
+.event-description p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.event-description ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lineup-list li {
+  margin-bottom: 0.5rem;
+}
+
+.event-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-widget {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-widget h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.location-map {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location-map img {
+  width: 100%;
+  display: block;
+}
+
+.location-address {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.share-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.ticket-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.ticket-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.ticket-option {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  gap: 1rem;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.ticket-option:hover {
+  border-color: #5D3FD3;
+  box-shadow: 0 4px 12px rgba(93, 63, 211, 0.1);
+}
+
+.featured-ticket {
+  border: 2px solid #5D3FD3;
+  background-color: #fafafa;
+}
+
+.ticket-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: #5D3FD3;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.ticket-details {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ticket-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.ticket-features {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.ticket-features li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.ticket-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.ticket-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5D3FD3;
+}
+
+.ticket-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quantity-btn {
+  width: 36px;
+  height: 36px;
+  background-color: #f5f5f5;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.ticket-quantity input {
+  width: 40px;
+  height: 36px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.seat-map-section {
+  margin-top: 2rem;
+}
+
+.seat-map-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.seat-map-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.seat-map {
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.stage {
+  width: 80%;
+  height: 40px;
+  background-color: #5D3FD3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 2rem;
+  border-radius: 4px;
+}
+
+.seat-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.row-label {
+  width: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.seat.available {
+  background-color: #ddd;
+  color: #444;
+}
+
+.seat.selected {
+  background-color: #5D3FD3;
+  color: white;
+}
+
+.seat.sold {
+  background-color: #f1f1f1;
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seat-sample {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.seat-sample.available {
+  background-color: #ddd;
+}
+
+.seat-sample.selected {
+  background-color: #5D3FD3;
+}
+
+.seat-sample.sold {
+  background-color: #f1f1f1;
+}
+
+.selected-seats {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.selected-seats h4 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.selected-seats-list {
+  margin-bottom: 1rem;
+  min-height: 24px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+
+/* Responsive Design */
+  .event-content {
+    grid-template-columns: 1fr;
+  }
+
+  .event-sidebar {
+    order: -1;
+  }
+
+  .sidebar-widget {
+    margin-bottom: 0;
+  }
+
+
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links a {
+    margin: 0.8rem 0;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .event-header-content {
+    flex-direction: column;
+  }
+
+  .ticket-info {
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .price-box {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .event-meta-large {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ticket-option {
+    flex-direction: column;
+  }
+
+  .ticket-actions {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+
+    </style>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        // Автоматическое перелистывание (опционально)
+        var autoSlide = setInterval(function () {
+            plusDivs(1);
+        }, 4000); // Меняем каждые 5 секунд
+
+        // Остановить автоматическое перелистывание при наведении
+        document.querySelector('.w3-content').addEventListener('mouseenter', function () {
+            clearInterval(autoSlide);
+        });
+
+        // Возобновить автоматическое перелистывание при уходе мыши
+        document.querySelector('.w3-content').addEventListener('mouseleave', function () {
+            autoSlide = setInterval(function () {
+                plusDivs(1);
+            },
+                4000);
+        });
+    </script>
+</body>

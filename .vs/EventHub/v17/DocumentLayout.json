@@ -3,10 +3,19 @@
   "WorkspaceRootPath": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\models\\aboutevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,13 +27,10 @@
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\views\\home\\contacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|\\\\mcb.local\\roamingprofiles$\\studentsdata\\1227154\\desktop\\eventhub repo\\eventhub\\eventhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -37,11 +43,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "AboutEvent.cs",
+              "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Models\\AboutEvent.cs",
+              "RelativeDocumentMoniker": "EventHub\\Models\\AboutEvent.cs",
+              "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Models\\AboutEvent.cs",
+              "RelativeToolTip": "EventHub\\Models\\AboutEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:10:24.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "EventHub\\Views\\Home\\About.cshtml",
+              "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "EventHub\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAFkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:06:23.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Event.cs",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Models\\Event.cs",
               "RelativeDocumentMoniker": "EventHub\\Models\\Event.cs",
@@ -54,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\appsettings.json",
               "RelativeDocumentMoniker": "EventHub\\appsettings.json",
@@ -67,59 +99,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "EventHub\\Views\\Home\\Index.cshtml",
               "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "EventHub\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAmwJgAAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAA4AAABwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-02T12:26:11.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Contacts.cshtml",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Contacts.cshtml",
               "RelativeDocumentMoniker": "EventHub\\Views\\Home\\Contacts.cshtml",
               "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Contacts.cshtml",
               "RelativeToolTip": "EventHub\\Views\\Home\\Contacts.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACcAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-29T11:13:47.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "EventHub\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "EventHub\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T10:16:41.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "EventHub\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "EventHub\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAB3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-22T13:54:47.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\appsettings.Development.json",
               "RelativeDocumentMoniker": "EventHub\\appsettings.Development.json",
@@ -132,20 +151,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "EventHub\\Controllers\\HomeController.cs",
               "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Controllers\\HomeController.cs",
               "RelativeToolTip": "EventHub\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAcwBoAAABBAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T12:43:19.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "EventHub\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "EventHub\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T10:16:41.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\Program.cs",
               "RelativeDocumentMoniker": "EventHub\\Program.cs",

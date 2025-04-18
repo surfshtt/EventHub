@@ -50,7 +50,7 @@
                         <div class="ticket-info">
                             <div class="price-box">
                                 <span class="price-from">От</span>
-                                <span class="price">@Model.eventToShow.MinPrice р.</span>
+                                <span class="price">@Model.eventToShow.Price[0] р.</span>
                             </div>
                             <a href="#tickets" class="btn btn-primary btn-large" style="font-weight:500">Купить билеты</a>
                         </div>
@@ -61,12 +61,6 @@
                     <div class="event-description">
                         <h2>О этом событии</h2>
                         <p>@Model.eventToShow.Description</p>
-                        @* <h3>Lineup</h3>
-                        <ul class="lineup-list">
-                            <li><strong>Friday Headliners:</strong> The Rhythm Collective, Electric Dreams, Sound Pioneers</li>
-                            <li><strong>Saturday Headliners:</strong> Melody Makers, Sonic Wave, Urban Beats</li>
-                            <li><strong>Sunday Headliners:</strong> The Harmonies, Bass Droppers, Acoustic Soul</li>
-                        </ul> *@
 
                         <h3>Что взять с собой?</h3>
                         <ul>
@@ -91,140 +85,78 @@
                     <div class="ticket-options">
                         <div class="ticket-option">
                             <div class="ticket-details">
-                                <h3>General Admission</h3>
-                                <p>Access to all stages and general festival areas</p>
+                                <h3>Основной билет</h3>
+                                <p>Доступ ко всем базовым возможностям</p>
                                 <ul class="ticket-features">
-                                    <li>3-day access to all stages</li>
-                                    <li>Food and beverage vendors</li>
-                                    <li>Art installations</li>
+                                    <li>Ваши лчиные места</li>
+                                    <li>Бесплатная парковка</li>
+                                    <li>Бутылка воды</li>
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">$89</span>
+                                <span class="ticket-price">@Model.eventToShow.Price[0] р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
-                                    <input type="number" value="1" min="1" max="10">
+                                    <input type="number" value="1" min="1" max="5">
                                     <button class="quantity-btn plus">+</button>
                                 </div>
-                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-primary">В корзину</button>
                             </div>
                         </div>
 
                         <div class="ticket-option featured-ticket">
-                            <div class="ticket-badge">Best Value</div>
+                            <div class="ticket-badge">Лучший выбор</div>
                             <div class="ticket-details">
-                                <h3>VIP Package</h3>
-                                <p>Premium experience with exclusive perks</p>
+                                <h3>VIP билет</h3>
+                                <p>Премиальные услуги и возможности</p>
                                 <ul class="ticket-features">
-                                    <li>All General Admission benefits</li>
-                                    <li>VIP lounge access</li>
-                                    <li>Premium viewing areas</li>
-                                    <li>Exclusive bars with shorter lines</li>
-                                    <li>VIP restroom facilities</li>
-                                    <li>Commemorative festival item</li>
+                                    <li>Все возможности обычного билета</li>
+                                    <li>VIP места</li>
+                                    <li>Отдельный вход</li>
+                                    <li>Подарочный коктейль на баре</li>
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">$249</span>
+                                <span class="ticket-price">@Model.eventToShow.Price[1] р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
-                                    <input type="number" value="1" min="1" max="10">
+                                    <input type="number" value="1" min="1" max="5">
                                     <button class="quantity-btn plus">+</button>
                                 </div>
-                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-primary">В корзину</button>
                             </div>
                         </div>
 
                         <div class="ticket-option">
                             <div class="ticket-details">
-                                <h3>Single Day Pass</h3>
-                                <p>Access for one day of the festival</p>
+                                <h3>Льготный</h3>
+                                <p>Пониженная цена для пенсионеров и инвалидов</p>
                                 <ul class="ticket-features">
-                                    <li>One day access to all stages</li>
-                                    <li>Food and beverage vendors</li>
-                                    <li>Art installations</li>
+                                    <li>Все возможности обычного билета</li>
+                                    <li>Отдельный вход</li>
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">$39</span>
+                                <span class="ticket-price">@Model.eventToShow.Price[2] р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
-                                    <input type="number" value="1" min="1" max="10">
+                                    <input type="number" value="1" min="1" max="5">
                                     <button class="quantity-btn plus">+</button>
                                 </div>
-                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-primary">В корзину</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="seat-map-section">
-                        <h3>Choose Your Seats</h3>
-                        <div class="seat-map-container">
-                            <div class="seat-map">
-                                <div class="stage">STAGE</div>
-                                <div class="seat-grid">
-                                    <!-- Row A -->
-                                    <div class="seat-row">
-                                        <div class="row-label">A</div>
-                                        <div class="seat available" data-seat="A1">A1</div>
-                                        <div class="seat available" data-seat="A2">A2</div>
-                                        <div class="seat sold" data-seat="A3">A3</div>
-                                        <div class="seat available" data-seat="A4">A4</div>
-                                        <div class="seat available" data-seat="A5">A5</div>
-                                        <div class="seat sold" data-seat="A6">A6</div>
-                                        <div class="seat available" data-seat="A7">A7</div>
-                                        <div class="seat sold" data-seat="A8">A8</div>
-                                    </div>
-                                    <!-- Row B -->
-                                    <div class="seat-row">
-                                        <div class="row-label">B</div>
-                                        <div class="seat available" data-seat="B1">B1</div>
-                                        <div class="seat available" data-seat="B2">B2</div>
-                                        <div class="seat available" data-seat="B3">B3</div>
-                                        <div class="seat available" data-seat="B4">B4</div>
-                                        <div class="seat sold" data-seat="B5">B5</div>
-                                        <div class="seat sold" data-seat="B6">B6</div>
-                                        <div class="seat available" data-seat="B7">B7</div>
-                                        <div class="seat available" data-seat="B8">B8</div>
-                                    </div>
-                                    <!-- Row C -->
-                                    <div class="seat-row">
-                                        <div class="row-label">C</div>
-                                        <div class="seat available" data-seat="C1">C1</div>
-                                        <div class="seat available" data-seat="C2">C2</div>
-                                        <div class="seat sold" data-seat="C3">C3</div>
-                                        <div class="seat available" data-seat="C4">C4</div>
-                                        <div class="seat available" data-seat="C5">C5</div>
-                                        <div class="seat available" data-seat="C6">C6</div>
-                                        <div class="seat available" data-seat="C7">C7</div>
-                                        <div class="seat available" data-seat="C8">C8</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="seat-legend">
-                                <div class="legend-item">
-                                    <div class="seat-sample available"></div>
-                                    <span>Available</span>
-                                </div>
-                                <div class="legend-item">
-                                    <div class="seat-sample selected"></div>
-                                    <span>Selected</span>
-                                </div>
-                                <div class="legend-item">
-                                    <div class="seat-sample sold"></div>
-                                    <span>Sold</span>
-                                </div>
-                            </div>
+                  
+                    <div class="selected-seats">
+                        <h4>Selected Seats</h4>
+                        <div class="selected-seats-list">Нет выбранных билетов</div>
+                        <div class="total-price">
+                            <span>Всего:</span>
+                            <span class="price">0.00 р.</span>
                         </div>
-                        <div class="selected-seats">
-                            <h4>Selected Seats</h4>
-                            <div class="selected-seats-list">No seats selected</div>
-                            <div class="total-price">
-                                <span>Total:</span>
-                                <span class="price">$0.00</span>
-                            </div>
-                            <button class="btn btn-primary" disabled>Continue to Checkout</button>
-                        </div>
+                        <button class="btn btn-primary" disabled>Оплатить</button>
                     </div>
                 </div>
             </div>
@@ -237,77 +169,76 @@
         <div class="container">
             <h2 class="section-title">Похожие события</h2>
             <div class="event-grid">
-                @foreach (Event eve in Model.recEvents)
-                {
-                    <div class="event-card">
-                        <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
-                        <div class="event-details">
-                            <h3>@eve.Name</h3>
-                            <div class="event-meta">
-                                <span class="event-date">@eve.Date</span>
-                                <span class="event-location">@eve.Place, @eve.Country</span>
-                            </div>
-                            <p>@eve.Description</p>
-                            <div class="event-footer">
-                                <span class="event-price">от @eve.MinPrice</span>
-                                <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About">Подробнее</a>
-                            </div>
+                @foreach(Event eve in Model.recEvents){
+                <div class="event-card">
+                    <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
+                    <div class="event-details">
+                        <h3>@eve.Name</h3>
+                        <div class="event-meta">
+                            <span class="event-date">@eve.Date</span>
+                            <span class="event-location">@eve.Place, @eve.Country</span>
+                        </div>
+                        <p>@eve.Description</p>
+                        <div class="event-footer">
+                            <span class="event-price">от @eve.Price[0] р.</span>
+                            <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-eventId="@eve.Id">Подробнее</a>
                         </div>
                     </div>
-                }
+                </div>
+            }
 
             </div>
         </div>
-    }
 
-    <script>
-        // Simple mobile menu toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        // Seat selection functionality
-        document.querySelectorAll('.seat.available').forEach(seat => {
-            seat.addEventListener('click', function () {
-                this.classList.toggle('selected');
-                updateSelectedSeats();
+        <script>
+            // Simple mobile menu toggle
+            document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+                document.querySelector('.nav-links').classList.toggle('active');
             });
-        });
 
-        function updateSelectedSeats() {
-            const selectedSeats = document.querySelectorAll('.seat.selected');
-            const selectedSeatsList = document.querySelector('.selected-seats-list');
-            const totalPriceElement = document.querySelector('.total-price .price');
-            const checkoutButton = document.querySelector('.selected-seats button');
+            // Seat selection functionality
+            document.querySelectorAll('.seat.available').forEach(seat => {
+                seat.addEventListener('click', function () {
+                    this.classList.toggle('selected');
+                    updateSelectedSeats();
+                });
+            });
 
-            if (selectedSeats.length > 0) {
-                let seatNames = Array.from(selectedSeats).map(seat => seat.getAttribute('data-seat')).join(', ');
-                selectedSeatsList.textContent = seatNames;
-                let totalPrice = selectedSeats.length * 50; // Assuming $50 per seat
-                totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
-                checkoutButton.disabled = false;
-            } else {
-                selectedSeatsList.textContent = 'No seats selected';
-                totalPriceElement.textContent = '$0.00';
-                checkoutButton.disabled = true;
-            }
-        }
+            function updateSelectedSeats() {
+                const selectedSeats = document.querySelectorAll('.seat.selected');
+                const selectedSeatsList = document.querySelector('.selected-seats-list');
+                const totalPriceElement = document.querySelector('.total-price .price');
+                const checkoutButton = document.querySelector('.selected-seats button');
 
-        // Ticket quantity buttons
-        document.querySelectorAll('.quantity-btn').forEach(button => {
-            button.addEventListener('click', function () {
-                const input = this.parentNode.querySelector('input');
-                const currentValue = parseInt(input.value);
-
-                if (this.classList.contains('minus') && currentValue > 1) {
-                    input.value = currentValue - 1;
-                } else if (this.classList.contains('plus') && currentValue < 10) {
-                    input.value = currentValue + 1;
+                if (selectedSeats.length > 0) {
+                    let seatNames = Array.from(selectedSeats).map(seat => seat.getAttribute('data-seat')).join(', ');
+                    selectedSeatsList.textContent = seatNames;
+                    let totalPrice = selectedSeats.length * 50; // Assuming $50 per seat
+                    totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
+                    checkoutButton.disabled = false;
+                } else {
+                    selectedSeatsList.textContent = 'No seats selected';
+                    totalPriceElement.textContent = '$0.00';
+                    checkoutButton.disabled = true;
                 }
-            });
-        });
-    </script>
+            }
 
+            // Ticket quantity buttons
+            document.querySelectorAll('.quantity-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const input = this.parentNode.querySelector('input');
+                    const currentValue = parseInt(input.value);
+
+                    if (this.classList.contains('minus') && currentValue > 1) {
+                        input.value = currentValue - 1;
+                    } else if (this.classList.contains('plus') && currentValue < 10) {
+                        input.value = currentValue + 1;
+                    }
+                });
+            });
+        </script>
+
+    }
     <style>
         .slider-button {
             position: absolute;

@@ -22,17 +22,16 @@ namespace EventHub.Controllers
             var adminName = _configuration.GetValue<string>("Admin:Name");
 
             Event ev = new Event(
-                _configuration.GetValue<string>("Event:Name"),
-                _configuration.GetValue<string>("Event:Description"),
-                _configuration.GetValue<string>("Event:Date"),
-                _configuration.GetValue<string>("Event:Country"),
-                _configuration.GetValue<string>("Event:Place"),
+                _configuration.GetValue<int>("Event:Id"),
+                _configuration.GetValue<string>("Event:Name") ?? "Default Name",
+                _configuration.GetValue<string>("Event:Description") ?? "Default Description",
+                _configuration.GetValue<string>("Event:Date") ?? DateTime.Now.ToString("yyyy-MM-dd"),
+                _configuration.GetValue<string>("Event:Country") ?? "Default Country",
+                _configuration.GetValue<string>("Event:Place") ?? "Default Place",
                 _configuration.GetValue<int>("Event:NeedableAge"),
-                _configuration.GetValue<float>("Event:MinPrice")
+                _configuration.GetSection("Event:MinPrice").Get<float[]>() ?? new float[] { 0.0f }
             );
             Event[] ar = new Event[] { ev, ev };
-
-            // var  = _configuration.GetValue<string>("Admin:Name");
 
             return View(ar);
         }
@@ -47,22 +46,39 @@ namespace EventHub.Controllers
             return View();
         }
 
+        public IActionResult Admin()
+        {
+            User us = new User("fk8ght", "1234", "admin", "fk8ghtt@gmail.com");
+            return View(us);
+        }
+
         public IActionResult About(int eventId)
         {
             //Логика поиска в бд
-            Event ev = new Event(
-               _configuration.GetValue<string>("Event:Name"),
-               _configuration.GetValue<string>("Event:Description"),
-               _configuration.GetValue<string>("Event:Date"),
-               _configuration.GetValue<string>("Event:Country"),
-               _configuration.GetValue<string>("Event:Place"),
-               _configuration.GetValue<int>("Event:NeedableAge"),
-               _configuration.GetValue<float>("Event:MinPrice")
-            );
 
-            AboutEvent ab = new AboutEvent(ev, [ev,ev,ev]);
+            if (eventId == 1)
+            {
+                Event ev = new Event(
+                   _configuration.GetValue<int>("Event:Id"),
+                   _configuration.GetValue<string>("Event:Name"),
+                   _configuration.GetValue<string>("Event:Description"),
+                   _configuration.GetValue<string>("Event:Date"),
+                   _configuration.GetValue<string>("Event:Country"),
+                   _configuration.GetValue<string>("Event:Place"),
+                   _configuration.GetValue<int>("Event:NeedableAge"),
+                   _configuration.GetSection("Event:MinPrice").Get<float[]>() ?? new float[] { 0.0f }
+                );
 
-            return View(ab);
+                AboutEvent ac = new AboutEvent(ev, [ev, ev, ev]);
+
+                return View(ac);
+            }
+            else
+            {
+                AboutEvent ab = new AboutEvent(null, [new Event(1, "1", "1", "1", "1", "1", 1, [1, 1])]); ;
+                return View(ab);
+            }
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

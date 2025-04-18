@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L4qCyKJrFLdsSPqzZBA5F55WFO1JZ4P+V/wbwoEg88k=",
+  "Hash": "AlVZI7n/lkGZCSX2eMeIkndRelRZ37YNVSFAwbKs3rU=",
   "Source": "EventHub",
   "BasePath": "_content/EventHub",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\wwwroot\\images\\events\\1.jpg",
+      "SourceId": "EventHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\wwwroot\\",
+      "BasePath": "_content/EventHub",
+      "RelativePath": "images/events/1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\events\\1.jpg"
     },
     {
       "Identity": "\\\\mcb.local\\RoamingProfiles$\\StudentsData\\1227154\\Desktop\\EventHub repo\\EventHub\\EventHub\\wwwroot\\images\\events\\1.png",

@@ -1,0 +1,151 @@
+﻿@model User
+@{
+    ViewData["Title"] = "About Page";
+}
+
+<style>
+    .mySlides {
+        display: none;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+        font-weight: 700;
+        position: relative;
+    }
+
+        .section-title:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+    button {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+    :root {
+        --primary: #5D3FD3;
+        --primary-hover: #4F34B3;
+        --radius: 8px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 12px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Volumetric effect */
+        transition: box-shadow 0.3s;
+        font-size: 19px; /* Font size for better readability */
+        margin-top: 10px;
+        margin-bottom:15px;
+    }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            outline: none; /* Remove default outline */
+            box-shadow: 0 0 12px rgba(93, 63, 211, 0.5); /* Shadow on focus */
+        }
+
+        .lblb{
+            font-size: 20px;
+        }
+
+    input[type="file"] {
+        width: 30%;
+        padding: 10px;
+        border: none;
+        border-radius: 12px; /* Закругленные углы */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Объемный эффект */
+        transition: box-shadow 0.3s;
+        font-size: 19px; /* Размер шрифта для лучшей читаемости */
+        background: white; /* Фоновый цвет */
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+        input[type="file"]:focus {
+            outline: none; /* Убрать стандартный контур */
+            box-shadow: 0 0 12px rgba(93, 63, 211, 0.5); /* Эффект при фокусе */
+        }
+</style>
+
+<body>
+
+    <div class="container">
+        @if (Model.role != "admin")
+        {
+            <h2 class="section-title" style="padding: 300px 0 0 0">Упс.. Вы не админ</h2>
+        }
+        else
+        {
+            <h2 class="section-title">Добавить событие</h2>
+            <form method="post" action="/Events/Create">
+                <div class="form-group">
+                    <label class="lblb"><strong>Название:</strong></label> <br />
+                    <input type="text" id="Name" name="Name" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Описание:</strong></label> <br />
+                    <textarea id="Description" name="Description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Дата:</strong></label> <br />
+                    <input type="text" id="Date" name="Date" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Страна:</strong></label> <br />
+                    <input type="text" id="Country" name="Country" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Место проведения:</strong></label> <br />
+                    <input type="text" id="Place" name="Place" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Возраст:</strong></label> <br />
+                    <input type="number" id="NeedableAge" name="NeedableAge" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Цены (через пробел):</strong></label> <br />
+                    <input type="text" id="Price" name="Price" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Загрузите фотографию:</strong></label> <br />
+                    <input type="file" id="Photo" name="Photo" accept="image/*" required />
+                </div>
+
+                <button type="submit" style="font-size: 25px; margin-top: 10px"><strong>Добавить событие</strong></button>
+            </form>
+        }
+    </div>
+
+</body>

@@ -20,6 +20,11 @@ namespace EventHub.Data
             modelBuilder.Entity<Event>()
                 .HasKey(e => e.Id);
 
+            modelBuilder.Entity<Event>()
+                .Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasDefaultValue(0);
+
             modelBuilder.Entity<User>()
                 .HasKey(u => u.Id);
         }

@@ -1,5 +1,4 @@
-﻿@model User
-@{
+﻿@{
     ViewData["Title"] = "Admin Page";
 }
 
@@ -66,7 +65,7 @@
         transition: box-shadow 0.3s;
         font-size: 19px; /* Font size for better readability */
         margin-top: 10px;
-        margin-bottom:15px;
+        margin-bottom: 15px;
     }
 
         input[type="text"]:focus,
@@ -76,9 +75,9 @@
             box-shadow: 0 0 12px rgba(93, 63, 211, 0.5); /* Shadow on focus */
         }
 
-        .lblb{
-            font-size: 20px;
-        }
+    .lblb {
+        font-size: 20px;
+    }
 
     input[type="file"] {
         width: 30%;
@@ -100,52 +99,53 @@
 </style>
 
 <body>
-
     <div class="container">
-        @if (Model.Role != "admin")
+        @if (false)//Model.Role != "admin")
         {
             <h2 class="section-title" style="padding: 300px 0 0 0">Упс.. Вы не админ</h2>
         }
         else
         {
             <h2 class="section-title">Добавить событие</h2>
-            <form method="post" action="/Events/Create">
+            <form method="post" asp-action="Admin" asp-controller="Events">
+                @Html.AntiForgeryToken()
                 <div class="form-group">
-                    <label class="lblb"><strong>Название:</strong></label> <br />
+                    <label class="lblb"><strong>Название:</strong></label>
+                    <br/>
                     <input type="text" id="Name" name="Name" required />
                 </div>
                 <div class="form-group">
-                    <label class="lblb"><strong>Описание:</strong></label> <br />
+                    <label class="lblb"><strong>Описание:</strong></label>
+                    <br />
                     <textarea id="Description" name="Description" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label class="lblb"><strong>Дата:</strong></label> <br />
+                    <label class="lblb"><strong>Дата:</strong></label>
+                    <br />
                     <input type="text" id="Date" name="Date" required />
                 </div>
                 <div class="form-group">
-                    <label class="lblb"><strong>Страна:</strong></label> <br />
+                    <label class="lblb"><strong>Страна:</strong></label>
+                    <br />
                     <input type="text" id="Country" name="Country" required />
                 </div>
                 <div class="form-group">
-                    <label class="lblb"><strong>Место проведения:</strong></label> <br />
+                    <label class="lblb"><strong>Место проведения:</strong></label>
+                    <br />
                     <input type="text" id="Place" name="Place" required />
                 </div>
                 <div class="form-group">
-                    <label class="lblb"><strong>Возраст:</strong></label> <br />
+                    <label class="lblb"><strong>Возраст:</strong></label>
+                    <br />
                     <input type="number" id="NeedableAge" name="NeedableAge" required />
                 </div>
                 <div class="form-group">
-                    <label class="lblb"><strong>Цена:</strong></label> <br />
+                    <label class="lblb"><strong>Цена:</strong></label>
+                    <br />
                     <input type="number" step="0.01" id="Price" name="Price" required />
                 </div>
-                <div class="form-group">
-                    <label class="lblb"><strong>Загрузите фотографию:</strong></label> <br />
-                    <input type="file" id="Photo" name="Photo" accept="image/*" required />
-                </div>
-
-                <button type="submit" style="font-size: 25px; margin-top: 10px"><strong>Добавить событие</strong></button>
+                <button type="submit" class="lblb">Добавить событие</button>
             </form>
         }
     </div>
-
 </body>

@@ -32,7 +32,7 @@ namespace EventHub.Controllers
         }
 
         // GET: Events/Create
-        public IActionResult Create()
+        public IActionResult Admin()
         {
             return View();
         }
@@ -40,10 +40,11 @@ namespace EventHub.Controllers
         // POST: Events/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Description,Date,Country,Place,NeedableAge,Price")] Event eventItem)
+        public async Task<IActionResult> Admin([Bind("Name,Description,Date,Country,Place,NeedableAge,Price")] Event eventItem)
         {
             if (ModelState.IsValid)
             {
+                eventItem.Id = _context.Events.Count() + 1;
                 _context.Add(eventItem);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

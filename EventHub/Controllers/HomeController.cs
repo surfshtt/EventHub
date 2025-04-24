@@ -55,10 +55,6 @@ namespace EventHub.Controllers
         public async Task<IActionResult> About(int eventId)
         {
             var eventItem = await _context.Events.FindAsync(eventId);
-            if (eventItem == null)
-            {
-                return NotFound();
-            }
 
             var relatedEvents = await _context.Events
                 .Where(e => e.Id != eventId)

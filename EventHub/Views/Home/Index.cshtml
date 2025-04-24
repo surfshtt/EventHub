@@ -1,4 +1,4 @@
-﻿@model Event[]
+﻿@model IEnumerable<Event>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -29,7 +29,7 @@
     <div class="container">
         <h2 class="section-title">Рекомендации</h2>
         <div class="event-grid">
-        @foreach(Event eve in Model){
+        @foreach(var eve in Model){
                 <div class="event-card">
                     <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
                     <div class="event-details">
@@ -40,13 +40,12 @@
                         </div>
                         <p>@eve.Description</p>
                         <div class="event-footer">
-                            <span class="event-price">от @eve.Price[0] р.</span>
+                            <span class="event-price">от @eve.Price р.</span>
                             <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-eventId="@eve.Id">Подробнее</a>
                         </div>
                     </div>
                 </div>
             }
-
         </div>
     </div>
 

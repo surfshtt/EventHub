@@ -1,18 +1,27 @@
-﻿namespace EventHub.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EventHub.Models
 {
     public class User
     {
-        public string userName { set; get; }
-        public string password { set; get; }
-        public string role { set; get; }
-        public string gmail { set; get; }
+        [Key]
+        public int Id { get; set; }
 
-        public User(string userName, string password, string role, string gmail)
-        {
-            this.userName = userName;
-            this.password = password;
-            this.role = role;
-            this.gmail = gmail;
-        }
+        [Required]
+        [StringLength(50)]
+        public string UserName { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100)]
+        public string Password { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(20)]
+        public string Role { get; set; } = string.Empty;
+
+        [Required]
+        [EmailAddress]
+        [StringLength(100)]
+        public string Email { get; set; } = string.Empty;
     }
 }

@@ -1,8 +1,9 @@
 using EventHub.Models;
-using Microsoft.AspNetCore.Components;
+using EventHub.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventHub.Controllers
 {
@@ -10,30 +11,19 @@ namespace EventHub.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context)
         {
             _logger = logger;
             _configuration = configuration;
+            _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var adminName = _configuration.GetValue<string>("Admin:Name");
-
-            Event ev = new Event(
-                _configuration.GetValue<int>("Event:Id"),
-                _configuration.GetValue<string>("Event:Name") ?? "Default Name",
-                _configuration.GetValue<string>("Event:Description") ?? "Default Description",
-                _configuration.GetValue<string>("Event:Date") ?? DateTime.Now.ToString("yyyy-MM-dd"),
-                _configuration.GetValue<string>("Event:Country") ?? "Default Country",
-                _configuration.GetValue<string>("Event:Place") ?? "Default Place",
-                _configuration.GetValue<int>("Event:NeedableAge"),
-                _configuration.GetSection("Event:MinPrice").Get<float[]>() ?? new float[] { 0.0f }
-            );
-            Event[] ar = new Event[] { ev, ev };
-
-            return View(ar);
+            var events = await _context.Events.ToListAsync();
+            return View(events);
         }
 
         public IActionResult Privacy()
@@ -46,39 +36,42 @@ namespace EventHub.Controllers
             return View();
         }
 
-        public IActionResult Admin()
+        public async Task<IActionResult> Admin()
         {
-            User us = new User("fk8ght", "1234", "admin", "fk8ghtt@gmail.com");
-            return View(us);
+            var adminUser = await _context.Users.FirstOrDefaultAsync(u => u.Role == "admin");
+            if (adminUser == null)
+            {
+                adminUser = new User
+                {
+                    UserName = "admin",
+                    Password = "1234", // В реальном приложении пароль должен быть захэширован
+                    Role = "admin",
+                    Email = "admin@eventhub.com"
+                };
+            }
+            return View(adminUser);
         }
 
-        public IActionResult About(int eventId)
+        public async Task<IActionResult> About(int eventId)
         {
-            //������ ������ � ��
-
-            if (eventId == 1)
+            var eventItem = await _context.Events.FindAsync(eventId);
+            if (eventItem == null)
             {
-                Event ev = new Event(
-                   _configuration.GetValue<int>("Event:Id"),
-                   _configuration.GetValue<string>("Event:Name"),
-                   _configuration.GetValue<string>("Event:Description"),
-                   _configuration.GetValue<string>("Event:Date"),
-                   _configuration.GetValue<string>("Event:Country"),
-                   _configuration.GetValue<string>("Event:Place"),
-                   _configuration.GetValue<int>("Event:NeedableAge"),
-                   _configuration.GetSection("Event:MinPrice").Get<float[]>() ?? new float[] { 0.0f }
-                );
-
-                AboutEvent ac = new AboutEvent(ev, [ev, ev, ev]);
-
-                return View(ac);
-            }
-            else
-            {
-                AboutEvent ab = new AboutEvent(null, [new Event(1, "1", "1", "1", "1", "1", 1, [1, 1])]); ;
-                return View(ab);
+                return NotFound();
             }
 
+            var relatedEvents = await _context.Events
+                .Where(e => e.Id != eventId)
+                .Take(3)
+                .ToListAsync();
+
+            var aboutEvent = new AboutEvent
+            {
+                Event = eventItem,
+                RelatedEvents = relatedEvents
+            };
+
+            return View(aboutEvent);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

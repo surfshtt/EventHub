@@ -2,14 +2,7 @@
 {
     public class AboutEvent
     {
-        public Event eventToShow { set; get; }
-        public Event[] recEvents { set; get; }
-
-
-        public AboutEvent(Event eventToShow, Event[] recEvents)
-        {
-            this.eventToShow = eventToShow;
-            this.recEvents = recEvents;
-        }
+        public Event? Event { get; set; }
+        public List<Event> RelatedEvents { get; set; } = new List<Event>();
     }
 }

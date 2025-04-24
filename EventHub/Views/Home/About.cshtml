@@ -11,7 +11,7 @@
 </style>
 <body>
 
-    @if(Model.eventToShow == null)
+    @if(Model.Event == null)
     {
         <h2 class="section-title" style="padding:300px 0 0 0">Упс.. Событие не найдено</h2>
     }
@@ -23,11 +23,11 @@
                     <img class="mySlides" src="~/images/preview/1.png" style="width:100%; border-radius:var(--radius);">
                     <div class="event-header-content">
                         <div class="event-info">
-                            <h1 style="font-weight:700">@Model.eventToShow.Name</h1>
+                            <h1 style="font-weight:700">@Model.Event.Name</h1>
                             <div class="event-meta-large">
                                 <div class="meta-item">
                                     <span class="meta-label">Дата</span>
-                                    <span class="meta-value">@Model.eventToShow.Date</span>
+                                    <span class="meta-value">@Model.Event.Date</span>
                                 </div>
                                 <div class="meta-item">
                                     <span class="meta-label">Время</span>
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="meta-item">
                                     <span class="meta-label">Локация</span>
-                                    <span class="meta-value">@Model.eventToShow.Place, @Model.eventToShow.Country</span>
+                                    <span class="meta-value">@Model.Event.Place, @Model.Event.Country</span>
                                 </div>
                                 <div class="meta-item">
                                     <span class="meta-label">Организатор</span>
@@ -50,7 +50,7 @@
                         <div class="ticket-info">
                             <div class="price-box">
                                 <span class="price-from">От</span>
-                                <span class="price">@Model.eventToShow.Price[0] р.</span>
+                                <span class="price">@Model.Event.Price р.</span>
                             </div>
                             <a href="#tickets" class="btn btn-primary btn-large" style="font-weight:500">Купить билеты</a>
                         </div>
@@ -60,7 +60,7 @@
                 <div class="event-content">
                     <div class="event-description">
                         <h2>О этом событии</h2>
-                        <p>@Model.eventToShow.Description</p>
+                        <p>@Model.Event.Description</p>
 
                         <h3>Что взять с собой?</h3>
                         <ul>
@@ -94,7 +94,7 @@
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">@Model.eventToShow.Price[0] р.</span>
+                                <span class="ticket-price">@Model.Event.Price р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
                                     <input type="number" value="1" min="1" max="5">
@@ -117,7 +117,7 @@
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">@Model.eventToShow.Price[1] р.</span>
+                                <span class="ticket-price">@(Model.Event.Price * 2) р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
                                     <input type="number" value="1" min="1" max="5">
@@ -137,7 +137,7 @@
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">@Model.eventToShow.Price[2] р.</span>
+                                <span class="ticket-price">@(Model.Event.Price * 0.5M) р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
                                     <input type="number" value="1" min="1" max="5">
@@ -169,7 +169,7 @@
         <div class="container">
             <h2 class="section-title">Похожие события</h2>
             <div class="event-grid">
-                @foreach(Event eve in Model.recEvents){
+                @foreach(var eve in Model.RelatedEvents){
                 <div class="event-card">
                     <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
                     <div class="event-details">
@@ -180,7 +180,7 @@
                         </div>
                         <p>@eve.Description</p>
                         <div class="event-footer">
-                            <span class="event-price">от @eve.Price[0] р.</span>
+                            <span class="event-price">от @eve.Price р.</span>
                             <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-eventId="@eve.Id">Подробнее</a>
                         </div>
                     </div>

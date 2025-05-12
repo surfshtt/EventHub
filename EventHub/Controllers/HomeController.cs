@@ -20,10 +20,16 @@ namespace EventHub.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string eventType = null)
         {
-            var events = await _context.Events.ToListAsync();
-            return View(events);
+            var events = _context.Events.AsQueryable();
+            
+            
+            
+            ViewBag.EventTypes = new List<string> { "Концерт", "Театр", "Спорт", "Выставка", "Фестиваль", "Семейное" };
+            ViewBag.SelectedEventType = eventType;
+            
+            return View(await events.ToListAsync());
         }
 
         public IActionResult Privacy()

@@ -25,13 +25,23 @@
         <button class="slider-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
-
     <div class="container">
         <h2 class="section-title">Рекомендации</h2>
         <div class="event-grid">
-        @foreach(var eve in Model){
+            @{
+                int i = 0;
+            }
+            @foreach (var eve in Model)
+            {
                 <div class="event-card">
-                    <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
+                    @if (eve.Picture != null && eve.Picture.Length > 0)
+                    {
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(eve.Picture)" alt="@eve.Name" class="event-image">
+                    }
+                    else
+                    {
+                        <img src="~/images/events/NotFound.png" alt="Не удалось загрузить картинку" class="event-image">
+                    }
                     <div class="event-details">
                         <h3>@eve.Name</h3>
                         <div class="event-meta">
@@ -45,8 +55,78 @@
                         </div>
                     </div>
                 </div>
+                i++;
+                if (i >= 6)
+                    break;
             }
         </div>
+    </div>
+
+    <div class="w3-content w3-display-container" style="min-width:100%; position:relative; margin-top:30px; margin-bottom:30px;">
+        <a asp-controller="Home" asp-action="About" asp-route-eventId="0">
+            <img class="mySlidess" src="~/images/preview/4.jpg" style="width:100%; border-radius:var(--radius);">
+        </a>
+        <a asp-controller="Home" asp-action="About" asp-route-eventId="0" >
+            <img class="mySlidess" src="~/images/preview/5.jpg" style="width:100%; border-radius:var(--radius);">
+        </a>
+        <a asp-controller="Home" asp-action="About" asp-route-eventId="0">
+            <img class="mySlidess" src="~/images/preview/6.jpg" style="width:100%; border-radius:var(--radius);">
+        </a>
+
+    </div>
+
+    <div class="container" style="margin-top: 90px">
+        <h2 class="section-title">Фильтр по типу мероприятия</h2>
+        <div class="event-type-filter" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
+            <a asp-action="Index" asp-route-eventType="" class="btn btn-outline-primary @(ViewBag.SelectedEventType == null ? "active" : "")">Все</a>
+            @foreach (var type in ViewBag.EventTypes)
+            {
+                <a asp-action="Index" asp-route-eventType="@type" class="btn btn-outline-primary @(ViewBag.SelectedEventType == type ? "active" : "")">@type</a>
+            }
+        </div>
+        <div class="event-grid">
+            @{
+                int c = 0;
+            }
+            @foreach (var eve in Model)
+            {
+                if (eve.EventType == ViewBag.SelectedEventType || ViewBag.SelectedEventType == null)
+                {
+                    <div class="event-card">
+                        @if (eve.Picture != null && eve.Picture.Length > 0)
+                        {
+                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(eve.Picture)" alt="@eve.Name" class="event-image">
+                        }
+                        else
+                        {
+                            <img src="~/images/events/NotFound.png" alt="Не удалось загрузить картинку" class="event-image">
+                        }
+                        <div class="event-details">
+                            <h3>@eve.Name</h3>
+                            <div class="event-meta">
+                                <span class="event-date">@eve.Date</span>
+                                <span class="event-location">@eve.Place, @eve.Country</span>
+                            </div>
+                            <p>@eve.Description</p>
+                            <div class="event-footer">
+                                <span class="event-price">от @eve.Price р.</span>
+                                <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-eventId="@eve.Id">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    c++;
+                    if (c >= 3)
+                    {
+                        break;
+                    }
+                }
+            }
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 20px">
+        <h2 class="section-title">Для всей семьи</h2>
     </div>
 
     <style>
@@ -68,9 +148,9 @@
             justify-content: center;
         }
 
-        .slider-button:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+            .slider-button:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
 
         .w3-display-left {
             left: 15px;
@@ -79,7 +159,6 @@
         .w3-display-right {
             right: 15px;
         }
-
 
         section {
             padding: 4rem 0
@@ -104,16 +183,11 @@
 
         .event-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2rem
         }
 
-            .event-grid.three-columns {
-                grid-template-columns: repeat(3,1fr)
-            }
-
         .event-card {
-
             background-color: var(--background);
             border-radius: var(--radius);
             overflow: hidden;
@@ -130,23 +204,10 @@
             }
 
         .event-image {
-            
             height: 300px;
             background-size: cover;
             background-position: center;
             position: relative
-        }
-
-        .event-badge {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            background-color: var(--accent);
-            color: #fff;
-            padding: .25rem .75rem;
-            font-size: .75rem;
-            font-weight: 600;
-            border-radius: 50px
         }
 
         .event-details {
@@ -164,20 +225,6 @@
             color: var(--text-light)
         }
 
-        .event-date {
-            margin-right: 1rem;
-            position: relative;
-        }
-
-        .event-location {
-            position: relative;
-        }
-
-        .event-details p {
-            color: var(--text-light);
-            margin-bottom: 1.5rem
-        }
-
         .event-footer {
             display: flex;
             justify-content: space-between;
@@ -192,25 +239,31 @@
 
         :root {
             --primary: #5D3FD3;
-            --primary-hover: #4F34B3;
-            --secondary: #20B2AA;
-            --accent: #FF7F50;
-            --text-dark: #333333;
-            --text-light: #666666;
-            --text-lighter: #999999;
             --background: #FFFFFF;
-            --background-alt: #F9F9F9;
-            --border: #E0E0E0;
-            --border-light: #F0F0F0;
-            --success: #4CAF50;
-            --warning: #FFC107;
-            --error: #F44336;
             --radius: 8px;
             --shadow: 0 2px 5px rgba(0, 0, 0, .1);
             --shadow-large: 0 5px 15px rgba(0, 0, 0, .12);
             --transition: all .3s ease
         }
 
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            .btn-outline-primary:hover {
+                background-color: var(--primary);
+                color: white;
+            }
+
+            .btn-outline-primary.active {
+                background-color: var(--primary);
+                color: white;
+            }
     </style>
 
     <script>
@@ -232,22 +285,22 @@
             x[slideIndex - 1].style.display = "block";
         }
 
-        // Автоматическое перелистывание (опционально)
+        // Автоматическое перелистывание
         var autoSlide = setInterval(function () {
             plusDivs(1);
-        }, 4000); // Меняем каждые 5 секунд
+        }, 4000); // Меняем каждые 4 секунды
 
         // Остановить автоматическое перелистывание при наведении
-        document.querySelector('.w3-content').addEventListener('mouseenter', function () {
-            clearInterval(autoSlide);
-        });
+        document.querySelectorAll('.w3-content').forEach(function (content) {
+            content.addEventListener('mouseenter', function () {
+                clearInterval(autoSlide);
+            });
 
-        // Возобновить автоматическое перелистывание при уходе мыши
-        document.querySelector('.w3-content').addEventListener('mouseleave', function () {
-            autoSlide = setInterval(function () {
-                plusDivs(1);
-            },
-                4000);
+            content.addEventListener('mouseleave', function () {
+                autoSlide = setInterval(function () {
+                    plusDivs(1);
+                }, 4000);
+            });
         });
     </script>
 

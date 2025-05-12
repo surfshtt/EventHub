@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EventHub.Models;
 using EventHub.Data;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace EventHub.Controllers
 {
@@ -21,15 +23,15 @@ namespace EventHub.Controllers
         }
 
         // GET: Events/Details/5
-        public async Task<IActionResult> Details(int id)
-        {
-            var eventItem = await _context.Events.FirstOrDefaultAsync(e => e.Id == id);
-            if (eventItem == null)
-            {
-                return NotFound();
-            }
-            return View(eventItem);
-        }
+        //public async Task<IActionResult> Details(int id)
+        //{
+        //    var eventItem = await _context.Events.FirstOrDefaultAsync(e => e.Id == id);
+        //    if (eventItem == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(eventItem);
+        //}
 
         // GET: Events/Create
         public IActionResult Admin()
@@ -40,14 +42,32 @@ namespace EventHub.Controllers
         // POST: Events/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Admin([Bind("Name,Description,Date,Country,Place,NeedableAge,Price")] Event eventItem)
+        public async Task<IActionResult> Admin([Bind("Name,Description,Date,Country,Place,NeedableAge,Price,EventType")] Event eventItem, IFormFile Picture, IFormFile Poster)
         {
             if (ModelState.IsValid)
             {
+                if (Picture != null && Picture.Length > 0)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await Picture.CopyToAsync(memoryStream);
+                        eventItem.Picture = memoryStream.ToArray();
+                    }
+                }
+
+                if (Poster != null && Poster.Length > 0)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await Poster.CopyToAsync(memoryStream);
+                        eventItem.Poster = memoryStream.ToArray();
+                    }
+                }
+
                 eventItem.Id = _context.Events.Count() + 1;
                 _context.Add(eventItem);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+  
             }
             return View(eventItem);
         }

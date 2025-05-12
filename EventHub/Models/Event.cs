@@ -7,7 +7,7 @@ namespace EventHub.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; } = 0;
+        public int Id { get; set; }
         
         [Required]
         [StringLength(100)]
@@ -30,5 +30,15 @@ namespace EventHub.Models
         
         [Required]
         public decimal Price { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string EventType { get; set; } = string.Empty;
+
+        [Required]
+        public byte[] Picture { get; set; } = Array.Empty<byte>();
+
+        [Required]
+        public byte[] Poster { get; set; } = Array.Empty<byte>();
     }
 }

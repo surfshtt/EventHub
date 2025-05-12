@@ -107,7 +107,7 @@
         else
         {
             <h2 class="section-title">Добавить событие</h2>
-            <form method="post" asp-action="Admin" asp-controller="Events">
+            <form method="post" asp-action="Admin" asp-controller="Events" enctype="multipart/form-data">
                 @Html.AntiForgeryToken()
                 <div class="form-group">
                     <label class="lblb"><strong>Название:</strong></label>
@@ -143,6 +143,28 @@
                     <label class="lblb"><strong>Цена:</strong></label>
                     <br />
                     <input type="number" step="0.01" id="Price" name="Price" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Тип мероприятия:</strong></label>
+                    <br />
+                    <select id="EventType" name="EventType" required>
+                        <option value="Концерт">Концерт</option>
+                        <option value="Театр">Театр</option>
+                        <option value="Спорт">Спорт</option>
+                        <option value="Выставка">Выставка</option>
+                        <option value="Фестиваль">Фестиваль</option>
+                        <option value="Семейное">Семейное</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Изображение:</strong></label>
+                    <br />
+                    <input type="file" id="Picture" name="Picture" accept="image/*" required />
+                </div>
+                <div class="form-group">
+                    <label class="lblb"><strong>Постер:</strong></label>
+                    <br />
+                    <input type="file" id="Poster" name="Poster" accept="image/*" required />
                 </div>
                 <button type="submit" class="lblb">Добавить событие</button>
             </form>

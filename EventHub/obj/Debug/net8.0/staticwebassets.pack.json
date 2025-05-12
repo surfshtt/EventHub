@@ -29,16 +29,20 @@
       "PackagePath": "staticwebassets\\images\\events\\3.png"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png",
+      "PackagePath": "staticwebassets\\images\\events\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\NotFound.png",
+      "PackagePath": "staticwebassets\\images\\events\\NotFound.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\NotFoundPoster.png",
+      "PackagePath": "staticwebassets\\images\\events\\NotFoundPoster.png"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\Thumbs.db",
       "PackagePath": "staticwebassets\\images\\events\\Thumbs.db"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\asd.png",
-      "PackagePath": "staticwebassets\\images\\events\\asd.png"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\dsa.png",
-      "PackagePath": "staticwebassets\\images\\events\\dsa.png"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\logo.PNG",
@@ -59,6 +63,30 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\3.png",
       "PackagePath": "staticwebassets\\images\\preview\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\preview\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\preview\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\preview\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\preview\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png",
+      "PackagePath": "staticwebassets\\images\\preview\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\тб.txt",
+      "PackagePath": "staticwebassets\\images\\preview\\тб.txt"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\js\\site.js",

@@ -20,7 +20,14 @@
         <section class="event-detail">
             <div class="container">
                 <div class="event-header">
-                    <img class="mySlides" src="~/images/preview/1.png" style="width:100%; border-radius:var(--radius);">
+                    @if (Model.Event.Poster != null && Model.Event.Poster.Length > 0)
+                    {
+                        <img class="mySlides" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Event.Poster)" style="width:100%; border-radius:var(--radius);">
+                    }
+                    else
+                    {
+                        <img class="mySlides" src="~/images/events/NotFoundPoster.png" style="width:100%; border-radius:var(--radius);">
+                    }
                     <div class="event-header-content">
                         <div class="event-info">
                             <h1 style="font-weight:700">@Model.Event.Name</h1>
@@ -137,7 +144,7 @@
                                 </ul>
                             </div>
                             <div class="ticket-actions">
-                                <span class="ticket-price">@(Model.Event.Price * 0.5M) р.</span>
+                                <span class="ticket-price">@(Model.Event.Price / 2) р.</span>
                                 <div class="ticket-quantity">
                                     <button class="quantity-btn minus">-</button>
                                     <input type="number" value="1" min="1" max="5">

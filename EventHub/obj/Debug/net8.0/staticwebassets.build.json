@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yb8gf2OlwEB31u4OngbxtZ63n23ACnvlJiUnTDTAPSI=",
+  "Hash": "6mI0H+F7jQQPtmjzWux+Oeb1wNy+aM4QzIqFmATlofg=",
   "Source": "EventHub",
   "BasePath": "_content/EventHub",
   "Mode": "Default",
@@ -433,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\preview\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\asdasd.png",
+      "SourceId": "EventHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\",
+      "BasePath": "_content/EventHub",
+      "RelativePath": "images/preview/asdasd.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\preview\\asdasd.png"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\тб.txt",

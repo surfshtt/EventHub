@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\repo\\EventHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\views\\events\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\views\\events\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\views\\events\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\views\\events\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\models\\userticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\models\\userticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F175E7-8502-471E-B33D-9129DF10DE57}|EventHub\\EventHub.csproj|c:\\users\\user\\desktop\\repo\\eventhub\\eventhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,23 +54,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserTicket.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Models\\UserTicket.cs",
+              "RelativeDocumentMoniker": "EventHub\\Models\\UserTicket.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Models\\UserTicket.cs",
+              "RelativeToolTip": "EventHub\\Models\\UserTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T17:59:19.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\appsettings.json",
+              "RelativeDocumentMoniker": "EventHub\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\appsettings.json",
+              "RelativeToolTip": "EventHub\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T17:48:19.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EventHub\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EventHub\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T17:47:30.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "EventHub\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "EventHub\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T17:37:44.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "EventHub\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "EventHub\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAhwEEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T17:36:27.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "EventHub\\Views\\Home\\About.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "EventHub\\Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAJIAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAANQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T14:55:55.186Z"
+              "WhenOpened": "2025-04-24T14:55:55.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Program.cs",
               "RelativeDocumentMoniker": "EventHub\\Program.cs",
@@ -62,13 +148,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Admin.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Events\\Admin.cshtml",
               "RelativeDocumentMoniker": "EventHub\\Views\\Events\\Admin.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Events\\Admin.cshtml",
               "RelativeToolTip": "EventHub\\Views\\Events\\Admin.cshtml",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAqwKwAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAswKwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-24T14:07:26.889Z",
               "EditorCaption": ""
@@ -81,14 +167,14 @@
               "RelativeDocumentMoniker": "EventHub\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "EventHub\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEAAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-24T13:38:15.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "EventHub\\Controllers\\HomeController.cs",
@@ -100,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "EventsController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\Controllers\\EventsController.cs",
               "RelativeDocumentMoniker": "EventHub\\Controllers\\EventsController.cs",

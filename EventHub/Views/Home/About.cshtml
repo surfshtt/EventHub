@@ -170,31 +170,46 @@
         </section>
 
 
-       
 
 
-        <div class="container">
-            <h2 class="section-title">Похожие события</h2>
-            <div class="event-grid">
-                @foreach(var eve in Model.RelatedEvents){
-                <div class="event-card">
-                    <img src="~/images/events/dsa.png" alt="Не удалось загрузить картинку" class="event-image">
-                    <div class="event-details">
-                        <h3>@eve.Name</h3>
-                        <div class="event-meta">
-                            <span class="event-date">@eve.Date</span>
-                            <span class="event-location">@eve.Place, @eve.Country</span>
-                        </div>
-                        <p>@eve.Description</p>
-                        <div class="event-footer">
-                            <span class="event-price">от @eve.Price р.</span>
-                            <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-eventId="@eve.Id">Подробнее</a>
+
+        <div class="event-grid">
+            @{
+                int c = 0;
+            }
+            @foreach (var eve in Model.RelatedEvents)
+            {
+                if (eve.EventType == ViewBag.SelectedEventType || ViewBag.SelectedEventType == null)
+                {
+                    <div class="event-card">
+                        @if (eve.Picture != null && eve.Picture.Length > 0)
+                        {
+                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(eve.Picture)" alt="@eve.Name" class="event-image">
+                        }
+                        else
+                        {
+                            <img src="~/images/events/NotFound.png" alt="Не удалось загрузить картинку" class="event-image">
+                        }
+                        <div class="event-details">
+                            <h3>@eve.Name</h3>
+                            <div class="event-meta">
+                                <span class="event-date">@eve.Date</span>
+                                <span class="event-location">@eve.Place, @eve.Country</span>
+                            </div>
+                            <p>@eve.Description</p>
+                            <div class="event-footer">
+                                <span class="event-price">от @eve.Price р.</span>
+                                <a style="font-size:18px" class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-eventId="@eve.Id">Подробнее</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    c++;
+                    if (c >= 3)
+                    {
+                        break;
+                    }
+                }
             }
-
-            </div>
         </div>
 
         <script>

@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Вход";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Вход в аккаунт</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Login" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" name="email" class="form-control" required />
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="password" class="control-label">Пароль</label>
+                            <input type="password" name="password" class="form-control" required />
+                        </div>
+                        
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary" style="background-color: #5D3FD3; border-color: #5D3FD3;">Войти</button>
+                        </div>
+                    </form>
+                    
+                    <div class="text-center mt-3">
+                        <p>Нет аккаунта? <a asp-action="Register" style="color: #5D3FD3;">Зарегистрироваться</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

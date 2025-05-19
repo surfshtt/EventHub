@@ -17,7 +17,7 @@
         <a asp-controller="Home" asp-action="About" asp-route-eventId="0">
             <img class="mySlides" src="~/images/preview/2.png" style="width:100%; border-radius:var(--radius);">
         </a>
-        <a asp-controller="Home" asp-action="About" asp-route-eventId="0">
+        <a asp-controller="Home" asp-action="About" asp-route-eventId="4">
             <img class="mySlides" src="~/images/preview/3.png" style="width:100%; border-radius:var(--radius);">
         </a>
 
@@ -45,7 +45,7 @@
                     <div class="event-details">
                         <h3>@eve.Name</h3>
                         <div class="event-meta">
-                            <span class="event-date">@eve.Date</span>
+                            <span class="event-date">@eve.Date</span> <br/>
                             <span class="event-location">@eve.Place, @eve.Country</span>
                         </div>
                         <p>@eve.Description</p>

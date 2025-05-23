@@ -14,6 +14,8 @@
                     <form asp-action="Register" method="post">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         
+                        <input type="hidden" asp-for="Role" value="User" />
+                        
                         <div class="form-group mb-3">
                             <label asp-for="UserName" class="control-label">Имя пользователя</label>
                             <input asp-for="UserName" class="form-control" />
@@ -22,24 +24,23 @@
                         
                         <div class="form-group mb-3">
                             <label asp-for="Email" class="control-label">Email</label>
-                            <input asp-for="Email" class="form-control" />
+                            <input asp-for="Email" class="form-control" type="email" />
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         
                         <div class="form-group mb-3">
                             <label asp-for="Password" class="control-label">Пароль</label>
-                            <input asp-for="Password" type="password" class="form-control" />
+                            <input asp-for="Password" class="form-control" type="password" />
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                         
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary" style="background-color: #5D3FD3; border-color: #5D3FD3;">Зарегистрироваться</button>
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
                         </div>
                     </form>
-                    
-                    <div class="text-center mt-3">
-                        <p>Уже есть аккаунт? <a asp-action="Login" style="color: #5D3FD3;">Войти</a></p>
-                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <p class="mb-0">Уже есть аккаунт? <a asp-action="Login">Войти</a></p>
                 </div>
             </div>
         </div>

@@ -7,8 +7,66 @@
     .mySlides {
         display: none;
     }
+
+    .search-container {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .search-form {
+        display: flex;
+        gap: 10px;
+    }
+
+    .search-input {
+        flex: 1;
+        padding: 10px 15px;
+        border: 2px solid var(--primary);
+        border-radius: 20px;
+        font-size: 16px;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+        box-shadow: 0 0 0 3px rgba(93, 63, 211, 0.2);
+    }
+
+    .search-button {
+        padding: 10px 25px;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .search-button:hover {
+        background-color: #4e35b1;
+    }
+
+    .search-results {
+        text-align: center;
+        margin: 20px 0;
+        color: var(--text-light);
+    }
 </style>
 <body>
+    <div class="search-container">
+        <form asp-action="Index" method="get" class="search-form">
+            <input type="text" name="searchQuery" class="search-input" placeholder="Поиск по названию мероприятия..." value="@ViewBag.SearchQuery">
+            <button type="submit" class="search-button">Поиск</button>
+        </form>
+        @if (!string.IsNullOrEmpty(ViewBag.SearchQuery))
+        {
+            <div class="search-results">
+                Результаты поиска для: "@ViewBag.SearchQuery"
+            </div>
+        }
+    </div>
 
     <div class="w3-content w3-display-container" style="min-width:100%; position:relative; margin-top:30px; margin-bottom:30px;">
         <a asp-controller="Home" asp-action="About" asp-route-eventId="0">
@@ -125,9 +183,9 @@
     </div>
 
 
-    <div class="container" style="margin-top: 20px">
+   @*  <div class="container" style="margin-top: 20px">
         <h2 class="section-title">Для всей семьи</h2>
-    </div>
+    </div> *@
 
     <style>
         .slider-button {

@@ -57,6 +57,14 @@
       "PackagePath": "staticwebassets\\images\\events\\Thumbs.db"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\c083064ed8b22609832504f53678837c — копия.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\c083064ed8b22609832504f53678837c — копия.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\c083064ed8b22609832504f53678837c.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\c083064ed8b22609832504f53678837c.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\logo.PNG",
       "PackagePath": "staticwebassets\\images\\logo.PNG"
     },

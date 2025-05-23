@@ -3,46 +3,137 @@
     ViewData["Title"] = "Регистрация";
 }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-center">Регистрация</h3>
+<style>
+    .register-container {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    .register-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .register-header {
+        background: white;
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    .register-header h3 {
+        color: #5D3FD3;
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+    }
+
+    .register-body {
+        padding: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #5D3FD3;
+        box-shadow: 0 0 0 3px rgba(93, 63, 211, 0.2);
+    }
+
+    .control-label {
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .btn-register {
+        background-color: #5D3FD3;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 8px;
+        font-weight: 500;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .btn-register:hover {
+        background-color: #4e35b1;
+        transform: translateY(-1px);
+    }
+
+    .register-footer {
+        text-align: center;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-top: 1px solid rgba(0,0,0,.125);
+    }
+
+    .register-footer a {
+        color: #5D3FD3;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .register-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+</style>
+
+<div class="register-container">
+    <div class="register-card">
+        <div class="register-header">
+            <h3>Регистрация</h3>
+        </div>
+        <div class="register-body">
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <input type="hidden" asp-for="Role" value="User" />
+                
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label">Имя пользователя</label>
+                    <input asp-for="UserName" class="form-control" placeholder="Введите имя пользователя" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
-                <div class="card-body">
-                    <form asp-action="Register" method="post">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        
-                        <input type="hidden" asp-for="Role" value="User" />
-                        
-                        <div class="form-group mb-3">
-                            <label asp-for="UserName" class="control-label">Имя пользователя</label>
-                            <input asp-for="UserName" class="form-control" />
-                            <span asp-validation-for="UserName" class="text-danger"></span>
-                        </div>
-                        
-                        <div class="form-group mb-3">
-                            <label asp-for="Email" class="control-label">Email</label>
-                            <input asp-for="Email" class="form-control" type="email" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
-                        
-                        <div class="form-group mb-3">
-                            <label asp-for="Password" class="control-label">Пароль</label>
-                            <input asp-for="Password" class="form-control" type="password" />
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-                        
-                        <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
-                        </div>
-                    </form>
+                
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">Email</label>
+                    <input asp-for="Email" class="form-control" type="email" placeholder="Введите email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-                <div class="card-footer text-center">
-                    <p class="mb-0">Уже есть аккаунт? <a asp-action="Login">Войти</a></p>
+                
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label">Пароль</label>
+                    <input asp-for="Password" class="form-control" type="password" placeholder="Введите пароль" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-            </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn-register">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+        <div class="register-footer">
+            <p class="mb-0">Уже есть аккаунт? <a asp-action="Login">Войти</a></p>
         </div>
     </div>
 </div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b94a79a5e4fca88ed691aa799192224a9bb1fee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c69b1297cbc9178bfa86b608c94d31ceabae44f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

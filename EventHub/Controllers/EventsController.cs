@@ -22,16 +22,6 @@ namespace EventHub.Controllers
             return View(await _context.Events.ToListAsync());
         }
 
-        // GET: Events/Details/5
-        //public async Task<IActionResult> Details(int id)
-        //{
-        //    var eventItem = await _context.Events.FirstOrDefaultAsync(e => e.Id == id);
-        //    if (eventItem == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(eventItem);
-        //}
 
         // GET: Events/Create
         public IActionResult Admin()

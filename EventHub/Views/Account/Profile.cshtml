@@ -59,19 +59,20 @@
                                             <td class="align-middle">@ticket.Quantity</td>
                                             <td class="align-middle">@ticket.TotalPrice р.</td>
                                             <td class="align-middle">
-                                                <span class="badge @(ticket.Status == "Active" ? "bg-success" : 
-                                                                   ticket.Status == "Used" ? "bg-secondary" : 
+                                                <span class="badge @(ticket.Status == "Активен" ? "bg-success" :
+                                                                   ticket.Status == "Использован" ? "bg-secondary" : 
                                                                    "bg-danger")">
                                                     @ticket.Status
                                                 </span>
                                             </td>
                                             <td class="align-middle">
-                                                @{
+                                                @if (ticket.Status == "Активен")
+                                                {
                                                     string link = "http://qrcoder.ru/code/?" + @Model.UserName + "%40" + @ticket.Event.Id + "%40" + @ticket.Quantity + "&4&0";
 
                                                     <a href="@link" target="_blank" class="btn btn-sm" style="background-color: #5D3FD3; color: white;">
-                                                    Открыть
-                                                </a>
+                                                        Открыть
+                                                    </a>                                                  
                                                 }
                                             </td>
                                         </tr>

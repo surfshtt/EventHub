@@ -220,15 +220,29 @@
                 let totalPrice = 0;
 
                 const addToCartButtons = document.querySelectorAll('.add-to-cart');
-                console.log('Found buttons:', addToCartButtons.length);
+                const checkoutBtn = document.getElementById('checkout-btn');
+                const selectedSeatsList = document.querySelector('.selected-seats-list');
+                const totalPriceElement = document.querySelector('.total-price .price');
+
+                if (!checkoutBtn || !selectedSeatsList || !totalPriceElement) {
+                    console.error('Required elements not found');
+                    return;
+                }
 
                 addToCartButtons.forEach(button => {
                     button.addEventListener('click', function() {
-                        
                         const price = parseFloat(this.dataset.price);
-                        const quantity = parseInt(this.closest('.ticket-actions').querySelector('input').value);
+                        const quantityInput = this.closest('.ticket-actions').querySelector('input');
+                        
+                        if (!quantityInput) {
+                            console.error('Quantity input not found');
+                            return;
+                        }
 
-                        if (price <= -1 || quantity <= -1) {
+                        const quantity = parseInt(quantityInput.value);
+
+                        if (isNaN(price) || isNaN(quantity) || price <= 0 || quantity <= 0) {
+                            alert('Неверная цена билета или количество');
                             return;
                         }
 
@@ -236,9 +250,9 @@
                         totalPrice += price * quantity;                     
 
                         // Обновляем отображение
-                        document.querySelector('.selected-seats-list').textContent = `Выбрано билетов: ${totalTickets}`;
-                        document.querySelector('.total-price .price').textContent = `${totalPrice.toFixed(2)} р.`;
-                        document.getElementById('checkout-btn').disabled = false;
+                        selectedSeatsList.textContent = `Выбрано билетов: ${totalTickets}`;
+                        totalPriceElement.textContent = `${totalPrice.toFixed(2)} р.`;
+                        checkoutBtn.disabled = false;
                     });
                 });
 
@@ -246,7 +260,10 @@
                 document.querySelectorAll('.quantity-btn').forEach(button => {
                     button.addEventListener('click', function() {
                         const input = this.parentNode.querySelector('input');
+                        if (!input) return;
+
                         const currentValue = parseInt(input.value);
+                        if (isNaN(currentValue)) return;
 
                         if (this.classList.contains('minus') && currentValue > 1) {
                             input.value = currentValue - 1;
@@ -257,7 +274,7 @@
                 });
 
                 // Обработка кнопки оплаты
-                document.getElementById('checkout-btn').addEventListener('click', async function() {
+                checkoutBtn.addEventListener('click', async function() {
                     if (totalTickets <= 0) {
                         alert('Корзина пуста');
                         return;
@@ -267,46 +284,54 @@
                         const cartItems = [];
                         document.querySelectorAll('.ticket-option').forEach(option => {
                             const quantityInput = option.querySelector('input[type="number"]');
+                            const priceElement = option.querySelector('.ticket-price');
+                            const addToCartBtn = option.querySelector('.add-to-cart');
+                            
+                            if (!quantityInput || !priceElement || !addToCartBtn) return;
+
                             const quantity = parseInt(quantityInput.value);
-                            if (quantity > 0) {
-                                const price = parseFloat(option.querySelector('.ticket-price').textContent);
-                                const ticketType = option.querySelector('.add-to-cart').dataset.ticketType || 'regular';
-                                const cartItem = {
-                                    eventId: @Model.Event.Id,
-                                    eventName: '@Model.Event.Name',
-                                    ticketType: ticketType,
-                                    quantity: quantity,
-                                    price: price,
-                                    totalPrice: price * quantity
-                                };
-                                console.log('Adding cart item:', cartItem);
-                                cartItems.push(cartItem);
-                            }
+                            if (quantity <= 1) return;
+
+                            const price = parseFloat(priceElement.textContent);
+                            if (isNaN(price) || price <= 0) return;
+
+                            const ticketType = addToCartBtn.dataset.ticketType || 'regular';
+                            const cartItem = {
+                                eventId: @Model.Event.Id,
+                                eventName: '@Model.Event.Name',
+                                ticketType: ticketType,
+                                quantity: quantity,
+                                price: price,
+                                totalPrice: price * quantity
+                            };
+                            cartItems.push(cartItem);
                         });
 
-                        console.log('Sending cart items:', cartItems);
-                        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
-                        console.log('CSRF Token:', token);
+                        if (cartItems.length === 0) {
+                            alert('Нет выбранных билетов');
+                            return;
+                        }
+
+                        const token = document.querySelector('input[name="__RequestVerificationToken"]');
+                        if (!token) {
+                            alert('Ошибка безопасности. Пожалуйста, обновите страницу.');
+                            return;
+                        }
 
                         const response = await fetch('/Home/Checkout', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
-                                'RequestVerificationToken': token
+                                'RequestVerificationToken': token.value
                             },
                             body: JSON.stringify(cartItems)
                         });
-
-                        console.log('Response status:', response.status);
-                        const responseText = await response.text();
-                        console.log('Response text:', responseText);
 
                         if (!response.ok) {
                             throw new Error(`HTTP error! status: ${response.status}`);
                         }
 
-                        const result = JSON.parse(responseText);
-                        console.log('Parsed result:', result);
+                        const result = await response.json();
                         
                         if (result.success) {
                             alert('Билеты успешно приобретены!');
@@ -316,9 +341,9 @@
                             });
                             totalTickets = 0;
                             totalPrice = 0;
-                            document.querySelector('.selected-seats-list').textContent = 'Нет выбранных билетов';
-                            document.querySelector('.total-price .price').textContent = '0.00 р.';
-                            document.getElementById('checkout-btn').disabled = true;
+                            selectedSeatsList.textContent = 'Нет выбранных билетов';
+                            totalPriceElement.textContent = '0.00 р.';
+                            checkoutBtn.disabled = true;
                         } else {
                             alert(result.message || 'Произошла ошибка при покупке билетов');
                         }

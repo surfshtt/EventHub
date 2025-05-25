@@ -24,7 +24,7 @@
         padding: 10px 15px;
         border: 2px solid var(--primary);
         border-radius: 20px;
-        font-size: 16px;
+        font-size: 20px;
         outline: none;
         transition: all 0.3s ease;
     }
@@ -52,6 +52,7 @@
         text-align: center;
         margin: 20px 0;
         color: var(--text-light);
+        font-size: 16px;
     }
 </style>
 <body>
@@ -343,12 +344,10 @@
             x[slideIndex - 1].style.display = "block";
         }
 
-        // Автоматическое перелистывание
         var autoSlide = setInterval(function () {
             plusDivs(1);
         }, 4000); // Меняем каждые 4 секунды
 
-        // Остановить автоматическое перелистывание при наведении
         document.querySelectorAll('.w3-content').forEach(function (content) {
             content.addEventListener('mouseenter', function () {
                 clearInterval(autoSlide);

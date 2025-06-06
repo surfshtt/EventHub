@@ -3709,11 +3709,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\EventHub.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\EventHub.csproj",
       "projectName": "EventHub",
-      "projectPath": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\EventHub.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\EventHub.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

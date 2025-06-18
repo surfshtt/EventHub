@@ -1,363 +1,363 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EventHub.bundle.scp.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EventHub.bundle.scp.css",
       "PackagePath": "staticwebassets\\EventHub.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\1.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\1.jpg",
       "PackagePath": "staticwebassets\\images\\events\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\1.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\1.png",
       "PackagePath": "staticwebassets\\images\\events\\1.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\2.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\2.png",
       "PackagePath": "staticwebassets\\images\\events\\2.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\3.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\3.png",
       "PackagePath": "staticwebassets\\images\\events\\3.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\50b634972cbb615921d52a576cd1bb4a.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\50b634972cbb615921d52a576cd1bb4a.jpg",
       "PackagePath": "staticwebassets\\images\\events\\50b634972cbb615921d52a576cd1bb4a.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\51159845ee267066b0194052cdea1202.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\51159845ee267066b0194052cdea1202.jpg",
       "PackagePath": "staticwebassets\\images\\events\\51159845ee267066b0194052cdea1202.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\5e47207efcfd55ba23641003435e9822.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\5e47207efcfd55ba23641003435e9822.jpg",
       "PackagePath": "staticwebassets\\images\\events\\5e47207efcfd55ba23641003435e9822.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png",
       "PackagePath": "staticwebassets\\images\\events\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\NotFound.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\NotFound.png",
       "PackagePath": "staticwebassets\\images\\events\\NotFound.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\NotFoundPoster.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\NotFoundPoster.png",
       "PackagePath": "staticwebassets\\images\\events\\NotFoundPoster.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\Thumbs.db",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\Thumbs.db",
       "PackagePath": "staticwebassets\\images\\events\\Thumbs.db"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\c083064ed8b22609832504f53678837c — копия.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\c083064ed8b22609832504f53678837c — копия.jpg",
       "PackagePath": "staticwebassets\\images\\events\\c083064ed8b22609832504f53678837c — копия.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\events\\c083064ed8b22609832504f53678837c.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\events\\c083064ed8b22609832504f53678837c.jpg",
       "PackagePath": "staticwebassets\\images\\events\\c083064ed8b22609832504f53678837c.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\logo.PNG",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\logo.PNG",
       "PackagePath": "staticwebassets\\images\\logo.PNG"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\logo.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\1.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\1.png",
       "PackagePath": "staticwebassets\\images\\preview\\1.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\2.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\2.png",
       "PackagePath": "staticwebassets\\images\\preview\\2.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\3.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\3.png",
       "PackagePath": "staticwebassets\\images\\preview\\3.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\4.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\4.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\5.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\5.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\50b634972cbb615921d52a576cd1bb4a — копия.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\50b634972cbb615921d52a576cd1bb4a — копия.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\50b634972cbb615921d52a576cd1bb4a — копия.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\50b634972cbb615921d52a576cd1bb4a.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\50b634972cbb615921d52a576cd1bb4a.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\50b634972cbb615921d52a576cd1bb4a.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\51159845ee267066b0194052cdea1202.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\51159845ee267066b0194052cdea1202.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\51159845ee267066b0194052cdea1202.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\5e47207efcfd55ba23641003435e9822.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\5e47207efcfd55ba23641003435e9822.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\5e47207efcfd55ba23641003435e9822.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\6.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\6.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\7.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\7.jpg",
       "PackagePath": "staticwebassets\\images\\preview\\7.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png",
       "PackagePath": "staticwebassets\\images\\preview\\72534f44f15ef8d0a2b002695d0c07ee.1000x1000x1.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\asdasd.png",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\asdasd.png",
       "PackagePath": "staticwebassets\\images\\preview\\asdasd.png"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\images\\preview\\тб.txt",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\images\\preview\\тб.txt",
       "PackagePath": "staticwebassets\\images\\preview\\тб.txt"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\repo\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\user\\Desktop\\курсач\\EventHub\\EventHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

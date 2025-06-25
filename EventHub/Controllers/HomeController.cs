@@ -181,7 +181,7 @@ namespace EventHub.Controllers
                         UserId = user.Id,
                         EventId = item.EventId,
                         PurchaseDate = DateTime.Now,
-                        Status = "Active",
+                        Status = "Активен",
                         Quantity = item.Quantity,
                         TotalPrice = item.TotalPrice
                     };
